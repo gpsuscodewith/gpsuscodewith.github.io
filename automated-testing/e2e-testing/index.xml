@@ -1,0 +1,235 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GPSUS Playbook – E2E Testing</title><link>/automated-testing/e2e-testing/</link><description>Recent content in E2E Testing on GPSUS Playbook</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="/automated-testing/e2e-testing/index.xml" rel="self" type="application/rss+xml"/><item><title>Automated-Testing: Test Type</title><link>/automated-testing/e2e-testing/test_type_template/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/automated-testing/e2e-testing/test_type_template/</guid><description>
+&lt;h1 id="test-type">~Test type~&lt;/h1>
+&lt;p>The document should start with a brief overview about the test type and what is covered in this document, the goal here is to provide a high-level description to help the reader understand what is covered to decide whether to continue reading or not.&lt;/p>
+&lt;h2 id="why-test-type-the-why">Why ~Test type~ [The Why]&lt;/h2>
+&lt;p>Start by describing the problem that this test type addresses, this should focus on the motivation behind the test type to aid the reader corelate this test type to the problem they are trying to resolve.&lt;/p>
+&lt;h2 id="test-type-design-blocks-the-what">~Test type~ Design Blocks [The What]&lt;/h2>
+&lt;p>In this section, describe the test type, its components, and how they interact to solve the problem described above.&lt;/p>
+&lt;h2 id="applying-the-test-type-the-how">Applying the ~test type~ [the how]&lt;/h2>
+&lt;p>In this section, describe what good testing looks like for this test type, discuss some of the best practices, discuss pitfalls to avoid, and finally discuss some of the common tools used to apply the test type, if any.&lt;/p>
+&lt;h2 id="test-type-frameworks-and-tools">~Test type~ Frameworks and Tools&lt;/h2>
+&lt;p>In this section, describe various test frameworks and tools, their pros and cons, and provide with the links to where to get more information.&lt;/p>
+&lt;h2 id="examplescase-studies">Examples/Case studies&lt;/h2>
+&lt;p>If available, list some good examples or case studies for this test type and elaborate on what is good about them.&lt;/p>
+&lt;h2 id="conclusion">Conclusion&lt;/h2>
+&lt;p>In conclusion, provide the final thoughts on why and how this type of test can help with your next customer engagement, what best practices and recommendations that can be withdrawn from the case studies and research.&lt;/p>
+&lt;h2 id="resources">Resources&lt;/h2>
+&lt;p>List additional readings about this test type for those that would like to dive deeper.&lt;/p></description></item><item><title>Automated-Testing: Testing Comparison</title><link>/automated-testing/e2e-testing/testing-comparison/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/automated-testing/e2e-testing/testing-comparison/</guid><description>
+&lt;h1 id="unit-vs-integration-vs-system-vs-e2e-testing">Unit vs Integration vs System vs E2E Testing&lt;/h1>
+&lt;p>To better understand which testing methodology when to apply it in your project, the below table illustrates the most critical characteristics and differences between Unit, Integration, System and End-to-End testing:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>&lt;strong>Characteristics&lt;/strong>&lt;/th>
+&lt;th>Unit Test&lt;/th>
+&lt;th>Integration Test&lt;/th>
+&lt;th>System Testing&lt;/th>
+&lt;th>E2E Test&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>&lt;strong>Scope&lt;/strong>&lt;/td>
+&lt;td>A module, APIs&lt;/td>
+&lt;td>Modules, Interfaces&lt;/td>
+&lt;td>Application, System&lt;/td>
+&lt;td>All sub-systems, network dependencies, services and databases&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;strong>Size&lt;/strong>&lt;/td>
+&lt;td>Tiny&lt;/td>
+&lt;td>Small to Medium&lt;/td>
+&lt;td>Large&lt;/td>
+&lt;td>X-Large&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;strong>Environment&lt;/strong>&lt;/td>
+&lt;td>Development&lt;/td>
+&lt;td>Integration test&lt;/td>
+&lt;td>QA test&lt;/td>
+&lt;td>Production like&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;strong>Data&lt;/strong>&lt;/td>
+&lt;td>Mock data&lt;/td>
+&lt;td>Test data&lt;/td>
+&lt;td>Test data&lt;/td>
+&lt;td>Copy of real production data&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;strong>SUT&lt;/strong>&lt;/td>
+&lt;td>Isolated unit test&lt;/td>
+&lt;td>Tests interfaces and flow data between the modules&lt;/td>
+&lt;td>Tests a particular system as a whole&lt;/td>
+&lt;td>Tests an application flow from start to end&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;strong>Scenarios&lt;/strong>&lt;/td>
+&lt;td>The test scenarios use developers perspectives&lt;/td>
+&lt;td>The test scenarios use developers and IT Pro testers perspectives&lt;/td>
+&lt;td>The test scenarios use the developers and QA testers perspectives&lt;/td>
+&lt;td>The test scenarios use the end-user perspectives&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;strong>When it happens&lt;/strong>&lt;/td>
+&lt;td>Unit testing happens after each build&lt;/td>
+&lt;td>Integration test happens after Unit testing&lt;/td>
+&lt;td>System testing happens before the E2E testing and after Unit and Integration testing&lt;/td>
+&lt;td>E2E testing happens after System testing&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>&lt;strong>Automated or Manual&lt;/strong>&lt;/td>
+&lt;td>Automation testing&lt;/td>
+&lt;td>It can be manual or automation testing&lt;/td>
+&lt;td>It can be manual or automation testing&lt;/td>
+&lt;td>It is a manual testing&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table></description></item><item><title>Automated-Testing: Testing Methods</title><link>/automated-testing/e2e-testing/testing-methods/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/automated-testing/e2e-testing/testing-methods/</guid><description>
+&lt;h2 id="horizontal-test">Horizontal Test&lt;/h2>
+&lt;p>This method is used very commonly. It occurs horizontally across the context of multiple applications. Take an example of a data ingest management system.&lt;/p>
+&lt;p>&lt;img src="./images/horizontal-e2e-testing.png" alt="Horizontal Test">&lt;/p>
+&lt;p>The inbound data may be injected from various sources, but it then &amp;ldquo;flatten&amp;rdquo; into a horizontal processing pipeline that may include various components, such as a gateway API, data transformation, data validation, storage, etc&amp;hellip; Throughout the entire Extract-Transform-Load (ETL) processing, the data flow can be tracked and monitored under the horizontal spectrum with little sprinkles of optional, and thus not important for the overal E2E test case, services, like logging, auditing, authentication.&lt;/p>
+&lt;h2 id="vertical-test">Vertical Test&lt;/h2>
+&lt;p>In this method, all most critical transactions of any application are verified and evaluated right from the start to finish. Each individual layer of the application is tested starting from top to bottom. Take an example of a web-based application that uses middleware services for reaching back-end resources.&lt;/p>
+&lt;p>&lt;img src="./images/vertical-e2e-testing.png" alt="Vertical Test">&lt;/p>
+&lt;p>In such case, each layer (tier) is required to be fully tested in conjunction with the &amp;ldquo;connected&amp;rdquo; layers above and beneath, in which services &amp;ldquo;talk&amp;rdquo; to each other during the end to end data flow. All these complex testing scenarios will require proper validation and dedicated automated testing. Thus this method is much more difficult.&lt;/p>
+&lt;h2 id="e2e-test-cases-design-guidances">E2E Test Cases Design Guidances&lt;/h2>
+&lt;p>Below enlisted are few &lt;strong>guidelines&lt;/strong> that should be kept in mind while designing the test cases for performing E2E testing:&lt;/p>
+&lt;ul>
+&lt;li>Test cases should be designed from the end user’s perspective.&lt;/li>
+&lt;li>Should focus on testing some existing features of the system.&lt;/li>
+&lt;li>Multiple scenarios should be considered for creating multiple test cases.&lt;/li>
+&lt;li>Different sets of test cases should be created to focus on multiple scenarios of the system.&lt;/li>
+&lt;/ul></description></item><item><title>Automated-Testing:</title><link>/automated-testing/e2e-testing/case-studies/kroger-datascience/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/automated-testing/e2e-testing/case-studies/kroger-datascience/</guid><description/></item><item><title>Automated-Testing:</title><link>/automated-testing/e2e-testing/recipes/gauge-framework/gauge-framework/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/automated-testing/e2e-testing/recipes/gauge-framework/gauge-framework/</guid><description>
+&lt;h1 id="introduction">Introduction&lt;/h1>
+&lt;p>Gauge is a free and open source framework for writing and running E2E tests. Some of the key features of Gauge that makes it unique include:&lt;/p>
+&lt;ul>
+&lt;li>Simple, flexible and rich syntax based on Markdown.&lt;/li>
+&lt;li>Consistent cross platform/language support for writing test code.&lt;/li>
+&lt;li>A modular architecture with plugins support&lt;/li>
+&lt;li>Extensible through plugins and hackable.&lt;/li>
+&lt;li>Supports data driven execution and external data sources&lt;/li>
+&lt;li>Helps you create maintainable test suites&lt;/li>
+&lt;li>Supports Visual Studio Code, Intellij IDEA, IDE Support&lt;/li>
+&lt;/ul>
+&lt;h2 id="what-is-a-specification">What is a Specification&lt;/h2>
+&lt;p>Gauge specifications are written using a Markdown syntax. For example&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#8f5902;font-style:italic"># Search for the data blob&lt;/span>
+&lt;span style="color:#8f5902;font-style:italic">## Look for file&lt;/span>
+* Goto Azure blob
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>In this specification &lt;em>Search for the data blob&lt;/em> is the &lt;strong>specification heading&lt;/strong>, &lt;em>Look for file&lt;/em> is a &lt;strong>scenario&lt;/strong> with a step &lt;em>Goto Azure blob&lt;/em>&lt;/p>
+&lt;h2 id="what-is-an-implementation">What is an Implementation&lt;/h2>
+&lt;p>You can implement the steps in a specification using a programming language, for example:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">from getgauge.python import step
+import os
+from step_impl.utils.driver import Driver
+@step&lt;span style="color:#ce5c00;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;Goto Azure blob&amp;#34;&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">)&lt;/span>
+def gotoAzureStorage&lt;span style="color:#ce5c00;font-weight:bold">()&lt;/span>:
+&lt;span style="color:#000">URL&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span> os.getenv&lt;span style="color:#ce5c00;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#39;STORAGE_ENDPOINT&amp;#39;&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">)&lt;/span>
+Driver.driver.get&lt;span style="color:#ce5c00;font-weight:bold">(&lt;/span>URL&lt;span style="color:#ce5c00;font-weight:bold">)&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>The Gauge runner reads and runs steps and its implementation for every scenario in the specification and generates a report of passing or failing scenarios.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#8f5902;font-style:italic"># Search for the data blob&lt;/span>
+&lt;span style="color:#8f5902;font-style:italic">## Look for file ✔&lt;/span>
+Successfully generated html-report &lt;span style="color:#000">to&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&amp;gt; reports/html-report/index.html
+Specifications: &lt;span style="color:#0000cf;font-weight:bold">1&lt;/span> executed &lt;span style="color:#0000cf;font-weight:bold">1&lt;/span> passed &lt;span style="color:#0000cf;font-weight:bold">0&lt;/span> failed &lt;span style="color:#0000cf;font-weight:bold">0&lt;/span> skipped
+Scenarios: &lt;span style="color:#0000cf;font-weight:bold">1&lt;/span> executed &lt;span style="color:#0000cf;font-weight:bold">1&lt;/span> passed &lt;span style="color:#0000cf;font-weight:bold">0&lt;/span> failed &lt;span style="color:#0000cf;font-weight:bold">0&lt;/span> skipped
+&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="re-using-steps">Re-using Steps&lt;/h2>
+&lt;p>Gauge helps you focus on testing the flow of an application. Gauge does this by making steps as re-usable as possible. With Gauge, you don’t need to build custom frameworks using a programming language.&lt;/p>
+&lt;p>For example, Gauge steps can pass parameters to an implementation by using a text with quotes.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#8f5902;font-style:italic"># Search for the data blob&lt;/span>
+&lt;span style="color:#8f5902;font-style:italic">## Look for file&lt;/span>
+* Goto Azure blob
+* Search &lt;span style="color:#204a87;font-weight:bold">for&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;store_data.csv&amp;#34;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>The implementation can now use “store_data.csv” as follows&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">from getgauge.python import step
+import os
+@step&lt;span style="color:#ce5c00;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;Search for &amp;lt;query&amp;gt;&amp;#34;&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">)&lt;/span>
+def searchForQuery&lt;span style="color:#ce5c00;font-weight:bold">(&lt;/span>query&lt;span style="color:#ce5c00;font-weight:bold">)&lt;/span>:
+write&lt;span style="color:#ce5c00;font-weight:bold">(&lt;/span>query&lt;span style="color:#ce5c00;font-weight:bold">)&lt;/span>
+press&lt;span style="color:#ce5c00;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;Enter&amp;#34;&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">)&lt;/span>
+step&lt;span style="color:#ce5c00;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;Search for &amp;lt;query&amp;gt;&amp;#34;&lt;/span>, &lt;span style="color:#ce5c00;font-weight:bold">(&lt;/span>query&lt;span style="color:#ce5c00;font-weight:bold">)&lt;/span> &lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&amp;gt; &lt;span style="color:#ce5c00;font-weight:bold">{&lt;/span>
+write&lt;span style="color:#ce5c00;font-weight:bold">(&lt;/span>query&lt;span style="color:#ce5c00;font-weight:bold">)&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+press&lt;span style="color:#ce5c00;font-weight:bold">(&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;Enter&amp;#34;&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">)&lt;/span>&lt;span style="color:#000;font-weight:bold">;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>You can then re-use this step within or across scenarios with different parameters:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#8f5902;font-style:italic"># Search for the data blob&lt;/span>
+&lt;span style="color:#8f5902;font-style:italic">## Look for Store data #1&lt;/span>
+* Goto Azure blob
+* Search &lt;span style="color:#204a87;font-weight:bold">for&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;store_1.csv&amp;#34;&lt;/span>
+&lt;span style="color:#8f5902;font-style:italic">## Look for Store data #2&lt;/span>
+* Goto Azure blob
+* Search &lt;span style="color:#204a87;font-weight:bold">for&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;store_2.csv&amp;#34;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>Or combine more than one step into &lt;strong>concepts&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#8f5902;font-style:italic"># Search Azure Storage for &amp;lt;query&amp;gt;&lt;/span>
+* Goto Azure blob
+* Search &lt;span style="color:#204a87;font-weight:bold">for&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;store_1.csv&amp;#34;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>The concept, Search Azure Storage for &lt;code>&amp;lt;query&amp;gt;&lt;/code> can be used like a step in a specification&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#8f5902;font-style:italic"># Search for the data blob&lt;/span>
+&lt;span style="color:#8f5902;font-style:italic">## Look for Store data #1&lt;/span>
+* Search Azure Storage &lt;span style="color:#204a87;font-weight:bold">for&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;store_1.csv&amp;#34;&lt;/span>
+&lt;span style="color:#8f5902;font-style:italic">## Look for Store data #2&lt;/span>
+* Search Azure Storage &lt;span style="color:#204a87;font-weight:bold">for&lt;/span> &lt;span style="color:#4e9a06">&amp;#34;store_2.csv&amp;#34;&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="data-driven-testing">Data-Driven Testing&lt;/h2>
+&lt;p>Gauge also supports data driven testing using Markdown tables as well as external csv files for example&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#8f5902;font-style:italic"># Search for the data blob&lt;/span>
+&lt;span style="color:#000;font-weight:bold">|&lt;/span>query &lt;span style="color:#000;font-weight:bold">|&lt;/span>
+&lt;span style="color:#000;font-weight:bold">|&lt;/span>---------&lt;span style="color:#000;font-weight:bold">|&lt;/span>
+&lt;span style="color:#000;font-weight:bold">|&lt;/span>store_1 &lt;span style="color:#000;font-weight:bold">|&lt;/span>
+&lt;span style="color:#000;font-weight:bold">|&lt;/span>store_2 &lt;span style="color:#000;font-weight:bold">|&lt;/span>
+&lt;span style="color:#000;font-weight:bold">|&lt;/span>store_3 &lt;span style="color:#000;font-weight:bold">|&lt;/span>
+&lt;span style="color:#8f5902;font-style:italic">## Look for stores data&lt;/span>
+* Search Azure Storage &lt;span style="color:#204a87;font-weight:bold">for&lt;/span> &amp;lt;query&amp;gt;
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>This will execute the scenario for all rows in the table.&lt;/p>
+&lt;p>In the examples above, we refactored a specification to be concise and flexible without changing the implementation.&lt;/p>
+&lt;h2 id="other-features">Other Features&lt;/h2>
+&lt;p>This is brief introduction to a few Gauge features. Please refer to the Gauge documentation for additional features such as:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://docs.gauge.org/getting_started/view-a-report.html">Reports&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.gauge.org/execution.html?#filter-specifications-and-scenarios-by-using-tags">Tags&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.gauge.org/execution.html#filter-specifications-and-scenarios-by-using-tags">Parallel execution&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.gauge.org/configuration.html#using-environments-in-a-gauge-project">Environments&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.gauge.org/writing-specifications.html#taking-custom-screenshots">Screenshots&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.gauge.org/plugin.html">Plugins&lt;/a>&lt;/li>
+&lt;li>And much more&lt;/li>
+&lt;/ul>
+&lt;h2 id="installing-gauge">Installing Gauge&lt;/h2>
+&lt;p>This getting started guide takes you through the core features of Gauge. By the end of this guide, you’ll be able to install Gauge and learn how to create your first Gauge test automation project.&lt;/p>
+&lt;h2 id="installation-instructions-for-windows-os">Installation Instructions for Windows OS&lt;/h2>
+&lt;h3 id="step-1-installing-gauge-on-windows">Step 1: Installing Gauge on Windows&lt;/h3>
+&lt;p>This section gives specific instructions on setting up Gauge in a Microsoft Windows environment.
+Download the following &lt;a href="https://github.com/getgauge/gauge/releases/download/v1.0.6/gauge-1.0.6-windows.x86_64.exe">installation bundle&lt;/a> to get the latest stable release of Gauge.&lt;/p>
+&lt;h3 id="step-2-installing-gauge-extension-for-visual-studio-code">Step 2: Installing Gauge extension for Visual Studio Code&lt;/h3>
+&lt;p>Follow the steps to add the Gauge Visual Studio Code plugin from the IDE&lt;/p>
+&lt;ol>
+&lt;li>Install the following &lt;a href="https://marketplace.visualstudio.com/items?itemName=getgauge.gauge">Gauge extension for Visual Studio Code&lt;/a>.&lt;/li>
+&lt;/ol>
+&lt;h3 id="troubleshooting-installation">Troubleshooting Installation&lt;/h3>
+&lt;p>If, when you run your first gauge spec you receive the error of missing python packages, open the command line terminal window and run this command:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">python.exe -m pip install &lt;span style="color:#000">getgauge&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">==&lt;/span>0.3.7 --user
+&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="installation-instructions-for-macos">Installation Instructions for MacOS&lt;/h2>
+&lt;h3 id="step-1-installing-gauge-on-macos">Step 1: Installing Gauge on macOS&lt;/h3>
+&lt;p>This section gives specific instructions on setting up Gauge in a macOS environment.&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Install brew if you haven’t already: Go to the &lt;a href="https://brew.sh/">brew website&lt;/a>, and follow the directions there.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Run the brew command to install Gauge&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&amp;gt; brew install gauge
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>if HomeBrew is working properly, you should see something similar to the following:&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#ce5c00;font-weight:bold">==&lt;/span>&amp;gt; Downloading https://homebrew.bintray.com/bottles/gauge-1.0.6.mojave.bottle.tar.gz
+&lt;span style="color:#ce5c00;font-weight:bold">==&lt;/span>&amp;gt; Downloading from https://akamai.bintray.com/45/45b496b39ee682a95ca49b36a94e8041e03fca3644e80223c36539f495fee384?__gda__&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#000">exp&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>1568017021~hmac&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>f6ca3a9
+&lt;span style="color:#8f5902;font-style:italic">######################################################################## 100.0%&lt;/span>
+&lt;span style="color:#ce5c00;font-weight:bold">==&lt;/span>&amp;gt; Pouring gauge-1.0.6.mojave.bottle.tar.gz
+🍺 /usr/local/Cellar/gauge/1.0.6: &lt;span style="color:#0000cf;font-weight:bold">3&lt;/span> files, 18.5MB
+&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="step-2--installing-gauge-extension-for-visual-studio-code">Step 2 : Installing Gauge extension for Visual Studio Code&lt;/h3>
+&lt;p>Follow the steps to add the Gauge Visual Studio Code plugin from the IDE&lt;/p>
+&lt;ol>
+&lt;li>Install the following &lt;a href="https://marketplace.visualstudio.com/items?itemName=getgauge.gauge">Gauge extension for Visual Studio Code&lt;/a>.&lt;/li>
+&lt;/ol>
+&lt;h3 id="post-installation-troubleshooting">Post-Installation Troubleshooting&lt;/h3>
+&lt;p>If, when you run your first gauge spec you receive the error of missing python packages, open the command line terminal window and run this command:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">python.exe -m pip install &lt;span style="color:#000">getgauge&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">==&lt;/span>0.3.7 --user
+&lt;/code>&lt;/pre>&lt;/div></description></item></channel></rss>
