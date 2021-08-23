@@ -188,7 +188,7 @@
 <p>There are two main techniques for integration testing.</p>
 <h3 id=big-bang>Big Bang</h3>
 <p>Big Bang integration testing is when all components are tested as a single unit. This is best for small system as a system too large may be difficult to localize for potential errors from failed tests. This approach also requires all components in the system under test to be completed which may delay when testing begins.</p>
-<p><img src=/img/bigBang.jpg alt="Big Bang Integration Testing"></p>
+<p><img src=/img/bigBang.jpeg alt="Big Bang Integration Testing"></p>
 <h3 id=incremental-testing>Incremental Testing</h3>
 <p>Incremental testing is when two or more components that are logically related are tested as a unit. After testing the unit, additional components are combined and tested all together. This process repeats until all necessary components are tested.</p>
 <h4 id=top-down>Top Down</h4>
@@ -196,7 +196,7 @@
 <p><img src=/img/topDown.png alt="Top Down Integration Testing"></p>
 <h4 id=bottom-up>Bottom Up</h4>
 <p>Bottom up testing is when lower level modules are tested together. In the scenario, what is commonly referred to as drivers are used to emulate the behavior of higher level modules not yet complete or included in the integration test.</p>
-<p><img src=/img/bottomUp.jpg alt="Bottom Up Integration Testing"></p>
+<p><img src=/img/bottomUp.jpeg alt="Bottom Up Integration Testing"></p>
 <p>A third approach known as the sandwich or hybrid model combines the bottom up and town down approaches to test lower and higher level components at the same time.</p>
 <h3 id=things-to-avoid>Things to Avoid</h3>
 <p>There is a tradeoff a developer must make between integration test code coverage and engineering cycles. With mock dependencies, test data, and multiple environments at test, too many integration tests are infeasible to maintain and become increasingly less meaningful. Too much mocking will slow down the test suite, make scaling difficult, and may be a sign the developer should consider other tests for the scenario such as acceptance or E2E.</p>
