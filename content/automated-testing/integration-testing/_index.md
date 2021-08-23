@@ -30,7 +30,7 @@ There are two main techniques for integration testing.
 
 Big Bang integration testing is when all components are tested as a single unit. This is best for small system as a system too large may be difficult to localize for potential errors from failed tests. This approach also requires all components in the system under test to be completed which may delay when testing begins.
 
-![Big Bang Integration Testing](/img/bigBang.jpg)
+![Big Bang Integration Testing](/img/bigBang.jpeg)
 
 ### Incremental Testing
 
@@ -46,7 +46,7 @@ Top down testing is when higher level components are tested following the contro
 
 Bottom up testing is when lower level modules are tested together. In the scenario, what is commonly referred to as drivers are used to emulate the behavior of higher level modules not yet complete or included in the integration test.
 
-![Bottom Up Integration Testing](/img/bottomUp.jpg)
+![Bottom Up Integration Testing](/img/bottomUp.jpeg)
 
 A third approach known as the sandwich or hybrid model combines the bottom up and town down approaches to test lower and higher level components at the same time.
 
