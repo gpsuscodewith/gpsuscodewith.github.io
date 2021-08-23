@@ -20,7 +20,7 @@ The inbound data may be  injected from various sources, but it then "flatten" in
 
 In this method, all most critical transactions of any application are verified and evaluated right from the start to finish. Each individual layer of the application is tested starting from top to bottom. Take an example of a web-based application that uses middleware services for reaching back-end resources.
 
-![Vertical Test](../../../static/ivertical-e2e-testing.png)
+![Vertical Test](../../../static/vertical-e2e-testing.png)
 
  In such case, each layer (tier) is required to be fully tested in conjunction with the "connected" layers above and beneath, in which services "talk" to each other during the end to end data flow. All these complex testing scenarios will require proper validation and dedicated automated testing. Thus this method is much more difficult.
 
