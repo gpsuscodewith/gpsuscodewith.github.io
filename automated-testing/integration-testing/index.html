@@ -15,18 +15,18 @@
 <link rel=icon type=image/png href=/favicons/android-144x144.png sizes=144x144>
 <link rel=icon type=image/png href=/favicons/android-192x192.png sizes=192x192>
 <title>Integration Testing | GPSUS Playbook</title>
-<meta name=description content="Learn more about unit, integration, system, and E2E Testing.
+<meta name=description content="Learn more about Integration Testing.
 ">
 <meta property="og:title" content="Integration Testing">
-<meta property="og:description" content="Learn more about unit, integration, system, and E2E Testing.
+<meta property="og:description" content="Learn more about Integration Testing.
 ">
 <meta property="og:type" content="website">
 <meta property="og:url" content="/automated-testing/integration-testing/">
 <meta itemprop=name content="Integration Testing">
-<meta itemprop=description content="Learn more about unit, integration, system, and E2E Testing.
+<meta itemprop=description content="Learn more about Integration Testing.
 "><meta name=twitter:card content="summary">
 <meta name=twitter:title content="Integration Testing">
-<meta name=twitter:description content="Learn more about unit, integration, system, and E2E Testing.
+<meta name=twitter:description content="Learn more about Integration Testing.
 ">
 <link rel=preload href=/scss/main.min.c7864c5e11ce29b0d7fb95d2fbbc92f0cd7d92caacfebfa74a46b09df7d22072.css as=style>
 <link href=/scss/main.min.c7864c5e11ce29b0d7fb95d2fbbc92f0cd7d92caacfebfa74a46b09df7d22072.css rel=stylesheet integrity>
@@ -70,7 +70,7 @@
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-engagement-model-li>
 <a href=/engagement-model/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-engagement-model><span>Engagement Model</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-engineering-fundamental-checklist-li>
-<a href=/engineering-fundamental-checklist/ title="Tech Lead's Engineering Fundamental Checklist" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-engineering-fundamental-checklist><span>Engineering Fundamental Checklist</span></a>
+<a href=/engineering-fundamental-checklist/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-engineering-fundamental-checklist><span>Engineering Fundamental Checklist</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-roles-li>
 <a href=/roles/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-roles><span>GPSUS Team Roles</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id=m-partner-selection-li>
@@ -143,6 +143,22 @@
 <aside class="d-none d-xl-block col-xl-2 td-sidebar-toc d-print-none">
 <div class="td-page-meta ml-2 pb-1 pt-2 mb-0">
 </div>
+<div class=td-toc><nav id=TableOfContents>
+<ul>
+<li><a href=#why-integration-testing>Why Integration Testing</a></li>
+<li><a href=#integration-testing-design-blocks>Integration Testing Design Blocks</a></li>
+<li><a href=#applying-integration-testing>Applying Integration Testing</a>
+<ul>
+<li><a href=#big-bang>Big Bang</a></li>
+<li><a href=#incremental-testing>Incremental Testing</a></li>
+<li><a href=#things-to-avoid>Things to Avoid</a></li>
+</ul>
+</li>
+<li><a href=#integration-testing-frameworks-and-tools>Integration Testing Frameworks and Tools</a></li>
+<li><a href=#conclusion>Conclusion</a></li>
+<li><a href=#resources>Resources</a></li>
+</ul>
+</nav></div>
 </aside>
 <main class="col-12 col-md-9 col-xl-8 pl-md-5" role=main>
 <nav aria-label=breadcrumb class="d-none d-md-block d-print-none">
@@ -157,12 +173,56 @@
 </nav>
 <div class=td-content>
 <h1>Integration Testing</h1>
-<div class=lead>Learn more about unit, integration, system, and E2E Testing.</div>
+<div class=lead>Learn more about Integration Testing.</div>
 <header class=article-meta>
 </header>
-<h2 id=goals>Goals</h2>
-<h2 id=impact>Impact</h2>
-<h2 id=measures>Measures</h2>
+<p>Integration testing is a software testing methodology used to determine how well individually developed components, or modules of a system communicate with each other. This method of testing confirms that an aggregate of a system, or sub-system, works together correctly or otherwise exposes erroneous behavior between two or more units of code.</p>
+<h2 id=why-integration-testing>Why Integration Testing</h2>
+<p>Because one component of a system may be developed independently or in isolation of another it is important to verify the interaction of some or all components. A complex system may be composed of databases, APIs, interfaces, and more, that all interact with each other or additional external systems. Integration tests expose system-level issues such as broken database schemas or faulty third-party API integration. It ensures higher test coverage and serves as an important feedback loop throughout development.</p>
+<h2 id=integration-testing-design-blocks>Integration Testing Design Blocks</h2>
+<p>Consider a banking application with three modules: login, transfers, and current balance, all developed independently. An integration test may verify when a user logs in they are re-directed to their current balance with the correct amount for the specific mock user. Another integration test may perform a transfer of a specified amount of money. The test may confirm there are sufficient funds in the account to perform the transfer, and after the transfer the current balance is updated appropriately for the mock user. The login page may be mocked with a test user and mock credentials if this module is not completed when testing the transfers module.</p>
+<p>Integration testing is done by the developer or QA tester. In the past, integration testing always happened after unit and before system and E2E testing. Compared to unit-tests, integration tests are fewer in quantity, usually run slower, and are more expensive to set up and develop. Now, if a team is following agile principles, integration tests can be performed before or after unit tests, early and often, as there is no need to wait for sequential processes. Additionally, integration tests can utilize mock data in order to simulate a complete system. There is an abundance of language-specific testing frameworks that can be used throughout the entire development lifecycle.</p>
+<p>** It is important to note the difference between integration and acceptance testing. Integration testing confirms a group of components work together as intended from a technical perspective, while acceptance testing confirms a group of components work together as intended from a business scenario.</p>
+<h2 id=applying-integration-testing>Applying Integration Testing</h2>
+<p>Prior to writing integration tests, the engineers must identify the different components of the system, and their intended behaviors and inputs and outputs. The architecture of the project must be fully documented or specified somewhere that can be readily referenced (e.g., the architecture diagram).</p>
+<p>There are two main techniques for integration testing.</p>
+<h3 id=big-bang>Big Bang</h3>
+<p>Big Bang integration testing is when all components are tested as a single unit. This is best for small system as a system too large may be difficult to localize for potential errors from failed tests. This approach also requires all components in the system under test to be completed which may delay when testing begins.</p>
+<p><img src=/img/bigBang.jpg alt="Big Bang Integration Testing"></p>
+<h3 id=incremental-testing>Incremental Testing</h3>
+<p>Incremental testing is when two or more components that are logically related are tested as a unit. After testing the unit, additional components are combined and tested all together. This process repeats until all necessary components are tested.</p>
+<h4 id=top-down>Top Down</h4>
+<p>Top down testing is when higher level components are tested following the control flow of a software system. In the scenario, what is commonly referred to as stubs are used to emulate the behavior of lower level modules not yet complete or merged in the integration test.</p>
+<p><img src=/img/topDown.png alt="Top Down Integration Testing"></p>
+<h4 id=bottom-up>Bottom Up</h4>
+<p>Bottom up testing is when lower level modules are tested together. In the scenario, what is commonly referred to as drivers are used to emulate the behavior of higher level modules not yet complete or included in the integration test.</p>
+<p><img src=/img/bottomUp.jpg alt="Bottom Up Integration Testing"></p>
+<p>A third approach known as the sandwich or hybrid model combines the bottom up and town down approaches to test lower and higher level components at the same time.</p>
+<h3 id=things-to-avoid>Things to Avoid</h3>
+<p>There is a tradeoff a developer must make between integration test code coverage and engineering cycles. With mock dependencies, test data, and multiple environments at test, too many integration tests are infeasible to maintain and become increasingly less meaningful. Too much mocking will slow down the test suite, make scaling difficult, and may be a sign the developer should consider other tests for the scenario such as acceptance or E2E.</p>
+<p>Integration tests of complex systems require high maintenance. Avoid testing business logic in integration tests by keeping test suites separate. Do not test beyond the acceptance criteria of the task and be sure to clean up any resources created for a given test. Additionally, avoid writing tests in a production environment. Instead, write them in a scaled-down copy environment.</p>
+<h2 id=integration-testing-frameworks-and-tools>Integration Testing Frameworks and Tools</h2>
+<p>Many tools and frameworks can be used to write both unit and integration tests. The following tools are for automating integration tests.</p>
+<ul>
+<li><a href=https://junit.org/junit5/>JUnit</a></li>
+<li><a href=https://robotframework.org/>Robot Framework</a></li>
+<li><a href=https://github.com/moq/moq4>moq</a></li>
+<li><a href=https://cucumber.io/>Cucumber</a></li>
+<li><a href=https://www.selenium.dev/>Selenium</a></li>
+<li><a href=https://behave.readthedocs.io/en/latest/tutorial.html>Behave (Python)</a></li>
+</ul>
+<h2 id=conclusion>Conclusion</h2>
+<p>Integration testing demonstrates how one module of a system, or external system, interfaces with another. This can be a test of two components, a sub-system, a whole system, or a collection of systems. Tests should be written frequently and throughout the entire development lifecycle using an appropriate amount of mocked dependencies and test data. Because integration tests prove that independently developed modules interface as technically designed, it increases confidence in the development cycle providing a path for a system that deploys and scales.</p>
+<h2 id=resources>Resources</h2>
+<ul>
+<li><a href=https://www.softwaretestinghelp.com/what-is-integration-testing/>Integration testing approaches</a></li>
+</ul>
+<ul>
+<li><a href=https://www.geeksforgeeks.org/software-engineering-integration-testing/>Integration testing pros and cons</a></li>
+<li><a href=https://circleci.com/blog/how-to-test-software-part-i-mocking-stubbing-and-contract-testing/>Integration tests mocks and stubs</a></li>
+<li><a href=https://www.goodreads.com/book/show/21278464-software-testing>Software Testing: Principles and Practices</a></li>
+<li><a href=https://github.com/Nick287/Behave-Quick-Start>Integration testing Behave test quick start</a></li>
+</ul>
 <div class=section-index>
 <hr class=panel-line>
 <div class=entry>

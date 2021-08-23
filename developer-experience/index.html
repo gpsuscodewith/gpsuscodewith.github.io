@@ -15,18 +15,18 @@
 <link rel=icon type=image/png href=/favicons/android-144x144.png sizes=144x144>
 <link rel=icon type=image/png href=/favicons/android-192x192.png sizes=192x192>
 <title>Developer Experience | GPSUS Playbook</title>
-<meta name=description content="Learn more about unit, integration, system, and E2E Testing.
+<meta name=description content="Learn more about best practices to enable a positive developer experience.
 ">
 <meta property="og:title" content="Developer Experience">
-<meta property="og:description" content="Learn more about unit, integration, system, and E2E Testing.
+<meta property="og:description" content="Learn more about best practices to enable a positive developer experience.
 ">
 <meta property="og:type" content="website">
 <meta property="og:url" content="/developer-experience/">
 <meta itemprop=name content="Developer Experience">
-<meta itemprop=description content="Learn more about unit, integration, system, and E2E Testing.
+<meta itemprop=description content="Learn more about best practices to enable a positive developer experience.
 "><meta name=twitter:card content="summary">
 <meta name=twitter:title content="Developer Experience">
-<meta name=twitter:description content="Learn more about unit, integration, system, and E2E Testing.
+<meta name=twitter:description content="Learn more about best practices to enable a positive developer experience.
 ">
 <link rel=preload href=/scss/main.min.c7864c5e11ce29b0d7fb95d2fbbc92f0cd7d92caacfebfa74a46b09df7d22072.css as=style>
 <link href=/scss/main.min.c7864c5e11ce29b0d7fb95d2fbbc92f0cd7d92caacfebfa74a46b09df7d22072.css rel=stylesheet integrity>
@@ -70,7 +70,7 @@
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-engagement-model-li>
 <a href=/engagement-model/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-engagement-model><span>Engagement Model</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-engineering-fundamental-checklist-li>
-<a href=/engineering-fundamental-checklist/ title="Tech Lead's Engineering Fundamental Checklist" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-engineering-fundamental-checklist><span>Engineering Fundamental Checklist</span></a>
+<a href=/engineering-fundamental-checklist/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-engineering-fundamental-checklist><span>Engineering Fundamental Checklist</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-roles-li>
 <a href=/roles/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-roles><span>GPSUS Team Roles</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id=m-partner-selection-li>
@@ -186,7 +186,7 @@
 </nav>
 <div class=td-content>
 <h1>Developer Experience</h1>
-<div class=lead>Learn more about unit, integration, system, and E2E Testing.</div>
+<div class=lead>Learn more about best practices to enable a positive developer experience.</div>
 <header class=article-meta>
 </header>
 <p>Developer experience refers to the how easy or difficult it is for a developer to perform essential tasks needed to implement a change. A positive developer experience would mean these tasks are relatively easy for the team (see measures below).</p>
@@ -253,7 +253,6 @@
 <p>The following outline examples of several strategies that can be adopted to promote a positive developer experience. It is expected that each team should define what a positive dev experience means within the context of their project. Additionally, refine that over time via feedback mechanisms such as sprint and project retrospectives.</p>
 <h3 id=establish-hotkeys>Establish Hotkeys</h3>
 <p>Assign hotkeys to each of the essential tasks.</p>
-<p>[<code>TODO: Suggest hotkeys for mac</code>]</p>
 <table>
 <thead>
 <tr>
@@ -314,10 +313,8 @@
 <p>[Clone steps + Branching steps + Commit steps + CI steps + Pull Request reviews & merges ] * [1 source code repository] = MINIMUM NUMBER OF STEPS</p>
 <h4 id=atomic-pull-requests>Atomic Pull Requests</h4>
 <p>When the solution is encapsulated within a single repository, it also allows pull requests to represent a change across multiple layers. This is especially helpful when a change requires changes to a shared contract between multiple components. For example, a story requires that an api endpoint is changed. With this strategy the api and web client could be updated with the same pull request. This avoids master being broken temporarily while waiting on dependent pull requests to merge.</p>
-<p>[<code>TODO: Add link to other documented benefits of consolidated repos within source control section</code>]</p>
 <h3 id=when-to-split-into-multiple-repositories>When to Split Into Multiple Repositories</h3>
-<p>[<code>TODO: Add link to source control section if it has guidance on this subject</code>]</p>
-<p>(Typically try to have the repository align with the product backlog.)</p>
+<p>Typically try to have the repository align with the product backlog.</p>
 <h3 id=minimize-remote-dependencies-for-local-development>Minimize Remote Dependencies for Local Development</h3>
 <p>The fewer dependencies on components that cannot run a developer&rsquo;s machine translate to fewer steps required to get started. Therefore, fewer dependencies will positively impact the measures above.</p>
 <p>The following strategies can be used to reduce these dependencies</p>
