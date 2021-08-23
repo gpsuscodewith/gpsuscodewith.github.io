@@ -10,7 +10,8 @@ Code-with engagements should always strive to produce reusable technical assets.
 
 ## Technical Asset Tiers & Governance
 GPS Technical Assets will be grouped into tiers to ensure that they are subject to the appropriate level of governance. The tiering and governance for these assets is defined as:
-![Technical Asset Tiers](../../img/technicalassets.png)
 
-For any personal tier 1 assets produced from the engagement, you should follow the ![Guidance for OCP Github Organization](https://microsoft-my.sharepoint.com/:p:/p/anfrankl/EcsJVTEOJsBJnUYnbIMrKUcBeT05N2NTWzssTL7fe_jWgQ?e=0k9I8E).
+![Technical Asset Tiers](technicalassets.png)
+
+For any personal tier 1 assets produced from the engagement, you should follow the ![Guidance for GPS Github Organization](https://microsoft-my.sharepoint.com/:p:/p/anfrankl/EcsJVTEOJsBJnUYnbIMrKUcBeT05N2NTWzssTL7fe_jWgQ?e=0k9I8E).
 

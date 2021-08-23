@@ -33,7 +33,7 @@ The core responsibilities of the Engagement Lead include:
 
 The technical lead of a project serves as the voice of the technical team to the customer and acts as a "tiebreaker" when it comes to technical design decisions. The technical lead is well versed in the software architecture, tools, patterns, and tech stack that the project will be built with. 
 
-To start, a technical lead should follow the [Tech Lead's Checklist](tech-leads-checklist.md). This will help with the engineering fundamentals.
+To start, a technical lead should follow the [Tech Lead's Checklist](../engineering-fundamental-checklist). This will help with the engineering fundamentals.
 
 ### DevOps Lead
 
