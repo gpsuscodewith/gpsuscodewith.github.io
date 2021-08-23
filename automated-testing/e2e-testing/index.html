@@ -194,14 +194,14 @@
 </header>
 <p>End-to-end (E2E) testing is a Software testing methodology to test a functional and data application flow consisting of several sub-systems working together from start to end.</p>
 <p>At times, these systems are developed in different technologies by different teams or organizations. Finally, they come together to form a functional business application. Hence, testing a single system would not suffice. Therefore, end to end testing verifies the application from start to end putting all its components together.</p>
-<p><img src=./images/e2e-testing.png alt="End to End Testing"></p>
+<p><img src=/img/e2e-testing.png alt="End to End Testing"></p>
 <h2 id=why-e2e-testing-the-why>Why E2E Testing [The Why]</h2>
 <p>In many commercial software application scenarios, a modern software system comprises of its interconnection with multiple sub-systems. These sub-systems can be within the same organization or can be components of different organizations. Also, these sub-systems can have somewhat similar or different lifetime release cycle from the current system. As a result, if there is any failure or fault in any sub-system, it can adversely affect the whole software system leading to its collapse.</p>
-<p><img src=./images/testing-pyramid.png alt="E2E Testing Pyramid"></p>
+<p><img src=/img/testing-pyramid.png alt="E2E Testing Pyramid"></p>
 <p>The above illustration is a testing pyramid from <a href=https://blog.kentcdodds.com/write-tests-not-too-many-mostly-integration-5e8c7fff591c>Kent C. Dodd’s blog</a> which is a combination of the pyramids from <a href=https://martinfowler.com/bliki/TestPyramid.html>Martin Fowler’s blog</a> and the <a href=https://testing.googleblog.com/2015/04/just-say-no-to-more-end-to-end-tests.html>Google Testing Blog</a>.</p>
 <p>The majority of your tests are at the bottom of the pyramid. As you move up the pyramid, the number of tests gets smaller. Also, going up the pyramid, tests get slower and more expensive to write, run, and maintain. Each type of testing vary for its purpose, application and the areas it suppose to cover. For more information on comparison analysis of different testing types, please see this <a href=../readme.md>## Unit vs Integration vs System vs E2E Testing</a> document.</p>
 <h2 id=e2e-testing-design-blocks-the-what>E2E Testing Design Blocks [The What]</h2>
-<p><img src=./images/e2e-blocks.png alt="E2E Testing Design Framework"></p>
+<p><img src=/img/e2e-blocks.png alt="E2E Testing Design Framework"></p>
 <p>We will look into all the 3 categories one by one:</p>
 <h3 id=user-functions>User Functions</h3>
 <p>Following actions should be performed as a part of building user functions:</p>
@@ -265,7 +265,7 @@
 </ul>
 <h2 id=e2e-testing-frameworks-and-tools>E2E Testing Frameworks and Tools</h2>
 <h3 id=1-gauge-framework><strong>1) Gauge Framework</strong></h3>
-<p><img src=./images/gauge.jpg alt="Gauge Framework"></p>
+<p><img src=/img/gauge.jpg alt="Gauge Framework"></p>
 <p>Gauge is a free and open source framework for writing and running E2E tests. Some of the key features of Gauge that makes it unique include:</p>
 <ul>
 <li>Simple, flexible and rich syntax based on Markdown.</li>
@@ -278,23 +278,23 @@
 </ul>
 <p>=> <a href=https://gauge.org/>Gauge Framework Website</a></p>
 <h3 id=2-robot-framework><strong>2) Robot Framework</strong></h3>
-<p><img src=./images/robot.jpg alt="Robot Framework"></p>
+<p><img src=/img/robot.jpg alt="Robot Framework"></p>
 <p>Robot Framework is a generic open source automation framework. The framework has easy syntax, utilizing human-readable keywords. Its capabilities can be extended by libraries implemented with Python or Java.</p>
 <p>Robot shares a lot of the same &ldquo;pros&rdquo; as Gauge, with the exception of the developer tooling and the syntax. In our usage, we found the VS Code Intellisense offered with Gauge to be much more stable than the offerings for Robot. We also found the syntax to be less readable than what Gauge offered. While both frameworks allow for markup based test case definitions, the Gauge syntax reads much more like an English sentence than Robot. Finally, Intellisense is baked into the markup files for Gauge test cases, which will create a function stub for the actual test definition if the developer allows it. The same cannot be said of the Robot Framework.</p>
 <p>=> <a href=https://robotframework.org/#introduction>Robot Framework Website</a></p>
 <h3 id=3-testcraft><strong>3) TestCraft</strong></h3>
-<p><img src=./images/TestCraft-logo.png alt=TestCraft></p>
+<p><img src=/img/TestCraft-logo.png alt=TestCraft></p>
 <p>TestCraft is a codeless Selenium test automation platform. Its revolutionary AI technology and unique visual modeling allow for faster test creation and execution while eliminating test maintenance overhead.</p>
 <p>The testers create fully automated test scenarios without coding. Customers find bugs faster, release more frequently, integrate with the CI/CD approach and improve the overall quality of their digital products. This all creates a complete end to end testing experience.</p>
 <p>=> <a href="https://www.testcraft.io/?utm_campaign=SoftwareTestingHelp%20&utm_source=SoftwareTestingHelp&utm_medium=EndtoEndTestingPage">TestCraft Website</a> or get it from the <a href="https://marketplace.visualstudio.com/items?itemName=testcraft.build-release-task">Visual Studio Marketplace</a></p>
 <h3 id=4-ranorex-studio><strong>4) Ranorex Studio</strong></h3>
-<p><img src=./images/ranorex-studio2.png alt="Ranorex Studio"></p>
+<p><img src=/img/ranorex-studio2.png alt="Ranorex Studio"></p>
 <p><strong>Ranorex Studio</strong> is a complete end-to-end test automation tool for desktop, web, and mobile applications. Create reliable tests fast without any coding at all, or using the full IDE. Use external CSV or Excel files or a SQL database as inputs to your tests.</p>
 <p>Run tests in parallel or on a Selenium Grid with built-in Selenium WebDriver. Ranorex Studio integrates with your CI/CD process to shorten your release cycles without sacrificing quality.</p>
 <p><strong>Ranorex Studio</strong> tests also integrate with Azure DevOps (AzDO), which can be run as part of a build pipeline in AzDO.</p>
 <p>=> <a href="https://www.ranorex.com/ranorex-studio-test-automation/?utm_source=softwaretestinghelp&utm_medium=cpc&utm_campaign=softwaretestinghelp_what-is-end-to-end-testing">Ranorex Studio Website</a> or read about its <a href=https://www.ranorex.com/help/latest/interfaces-connectivity/azure-devops-integration/introduction/>integration with AzDO</a></p>
 <h3 id=5-katalon-studio><strong>5) Katalon Studio</strong></h3>
-<p><img src=./images/New-Logo-Katalon-Studio.png alt=Katalon></p>
+<p><img src=/img/New-Logo-Katalon-Studio.png alt=Katalon></p>
 <p><strong>Katalon Studio</strong> is an excellent end-to-end automation solution for web, API, mobile, and desktop testing with DevOps support.</p>
 <p>With Katalon Studio, automated testing can be easily integrated into any CI/CD pipeline to release products faster while guaranteeing high quality. Katalon Studio customizes for users from beginners to experts. Robust functions such as Spying, Recording, Dual-editor interface and Custom Keywords make setting up, creating and maintaining tests possible for users.</p>
 <p>Built on top of Selenium and Appium, Katalon Studio helps standardize your end-to-end tests standardized. It also complies with the most popular frameworks to work seamlessly with other tools in the automated testing ecosystem.</p>
