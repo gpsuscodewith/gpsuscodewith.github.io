@@ -21,11 +21,11 @@
 ">
 <meta property="og:type" content="article">
 <meta property="og:url" content="/automated-testing/e2e-testing/testing-methods/"><meta property="article:section" content="automated-testing">
-<meta property="article:modified_time" content="2021-08-22T22:43:20-07:00">
+<meta property="article:modified_time" content="2021-08-22T23:29:07-07:00">
 <meta itemprop=name content="Testing Methods">
 <meta itemprop=description content="Learn more about unit, integration, system, and E2E Testing.
 ">
-<meta itemprop=dateModified content="2021-08-22T22:43:20-07:00">
+<meta itemprop=dateModified content="2021-08-22T23:29:07-07:00">
 <meta itemprop=wordCount content="274">
 <meta itemprop=keywords content><meta name=twitter:card content="summary">
 <meta name=twitter:title content="Testing Methods">
@@ -72,13 +72,10 @@
 <a href=/developer-experience/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-developer-experience><span>Developer Experience</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-engagement-model-li>
 <a href=/engagement-model/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-engagement-model><span>Engagement Model</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id=m-roles-li>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-engineering-fundamental-checklist-li>
+<a href=/engineering-fundamental-checklist/ title="Tech Lead's Engineering Fundamental Checklist" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-engineering-fundamental-checklist><span>Engineering Fundamental Checklist</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-roles-li>
 <a href=/roles/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-roles><span>GPSUS Team Roles</span></a>
-<ul class="ul-2 foldable">
-<li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-rolestech-leads-checklist-li>
-<a href=/roles/tech-leads-checklist/ class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id=m-rolestech-leads-checklist><span>Tech Lead's Engineering Fundamentals Checklist</span></a>
-</li>
-</ul>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id=m-partner-selection-li>
 <a href=/partner-selection/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-partner-selection><span>Partner Selection</span></a>
 <ul class="ul-2 foldable">
@@ -171,13 +168,18 @@
 </li>
 </ol>
 </nav>
+<div class=td-content>
+<h1>Testing Methods</h1>
+<div class=lead>Learn more about unit, integration, system, and E2E Testing.</div>
+<header class=article-meta>
+</header>
 <h2 id=horizontal-test>Horizontal Test</h2>
 <p>This method is used very commonly. It occurs horizontally across the context of multiple applications. Take an example of a data ingest management system.</p>
-<p><img src=./images/horizontal-e2e-testing.png alt="Horizontal Test"></p>
+<p><img src=../images/horizontal-e2e-testing.png alt="Horizontal Test"></p>
 <p>The inbound data may be injected from various sources, but it then &ldquo;flatten&rdquo; into a horizontal processing pipeline that may include various components, such as a gateway API, data transformation, data validation, storage, etc&mldr; Throughout the entire Extract-Transform-Load (ETL) processing, the data flow can be tracked and monitored under the horizontal spectrum with little sprinkles of optional, and thus not important for the overal E2E test case, services, like logging, auditing, authentication.</p>
 <h2 id=vertical-test>Vertical Test</h2>
 <p>In this method, all most critical transactions of any application are verified and evaluated right from the start to finish. Each individual layer of the application is tested starting from top to bottom. Take an example of a web-based application that uses middleware services for reaching back-end resources.</p>
-<p><img src=./images/vertical-e2e-testing.png alt="Vertical Test"></p>
+<p><img src=../images/vertical-e2e-testing.png alt="Vertical Test"></p>
 <p>In such case, each layer (tier) is required to be fully tested in conjunction with the &ldquo;connected&rdquo; layers above and beneath, in which services &ldquo;talk&rdquo; to each other during the end to end data flow. All these complex testing scenarios will require proper validation and dedicated automated testing. Thus this method is much more difficult.</p>
 <h2 id=e2e-test-cases-design-guidances>E2E Test Cases Design Guidances</h2>
 <p>Below enlisted are few <strong>guidelines</strong> that should be kept in mind while designing the test cases for performing E2E testing:</p>
@@ -187,6 +189,9 @@
 <li>Multiple scenarios should be considered for creating multiple test cases.</li>
 <li>Different sets of test cases should be created to focus on multiple scenarios of the system.</li>
 </ul>
+<div class="text-muted mt-5 pt-3 border-top">
+</div>
+</div>
 </main>
 </div>
 </div>
