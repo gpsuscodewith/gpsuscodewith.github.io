@@ -3,6 +3,7 @@ title: "Technical Assets"
 linkTitle: "Technical Assets"
 weight: 1
 hide_summary: true
+type: "docs"
 description: >
   Learn more about unit, integration, system, and E2E Testing.
 ---
@@ -11,7 +12,7 @@ Code-with engagements should always strive to produce reusable technical assets.
 ## Technical Asset Tiers & Governance
 GPS Technical Assets will be grouped into tiers to ensure that they are subject to the appropriate level of governance. The tiering and governance for these assets is defined as:
 
-![Technical Asset Tiers](../../static/technicalassets.png)
+![Technical Asset Tiers](../../static/technical-assets.png)
 
 For any personal tier 1 assets produced from the engagement, you should follow the ![Guidance for GPS Github Organization](https://microsoft-my.sharepoint.com/:p:/p/anfrankl/EcsJVTEOJsBJnUYnbIMrKUcBeT05N2NTWzssTL7fe_jWgQ?e=0k9I8E).
 
