@@ -3,9 +3,9 @@ title: "Definition of Production"
 linkTitle: "Definition of Production"
 type: "docs"
 weight: 2
-hide_summary: true
+# hide_summary: true
 description: >
-  Here's where your user finds out if your project is for them.
+  How do we define "in production"?
 ---
 
 # What does In-Production mean?

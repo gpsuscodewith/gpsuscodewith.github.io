@@ -2,9 +2,9 @@
 title: "Definition of Ready"
 linkTitle: "Definition of Ready"
 weight: 2
-hide_summary: true
+# hide_summary: true
 description: >
-  Learn more about unit, integration, system, and E2E Testing.
+  How do we define "Ready"?
 ---
 
 When the development team picks a user story from the top of the backlog, the user story needs to have enough detail to estimate the work needed to complete the story within the sprint. If it has enough detail to estimate, it is Ready to be developed.

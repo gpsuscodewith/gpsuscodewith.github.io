@@ -1,5 +1,5 @@
 ---
-title: "Tech Lead's Engineering Fundamental Checklist"
+title: "Engineering Fundamental Checklist"
 linkTitle: "Engineering Fundamental Checklist"
 weight: 1
 hide_summary: true

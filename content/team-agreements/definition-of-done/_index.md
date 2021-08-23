@@ -2,9 +2,9 @@
 title: "Definition of Done"
 linkTitle: "Definition of Done"
 weight: 2
-hide_summary: true
+# hide_summary: true
 description: >
-  Learn more about unit, integration, system, and E2E Testing.
+  How do we define "Done"?
 ---
 
 ## Content TODO's

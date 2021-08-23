@@ -4,7 +4,7 @@ linkTitle: "GPSUS Team Roles"
 weight: 1
 hide_summary: true
 description: >
-  Learn more about unit, integration, system, and E2E Testing.
+  Learn more about the standard roles within a project team
 ---
 
 A project team should be made up of a few standard roles to ensure the integrity of the work. Each team member should own the responsibilities of that role, but also understand that the success of the project is the responsibility of everyone. If there is an attempt to be pro-active and help a teammate, you should do so.

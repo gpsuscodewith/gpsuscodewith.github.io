@@ -4,7 +4,7 @@ linkTitle: "Tenants"
 weight: 1
 hide_summary: true
 description: >
-  Here's where your user finds out if your project is for them.
+  Learn more about the core tenants that direct GPS Code With team's engagement model both externally and internally.
 ---
 
 # Core Tenants / Principals

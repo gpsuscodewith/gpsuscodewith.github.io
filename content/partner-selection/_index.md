@@ -4,7 +4,7 @@ linkTitle: "Partner Selection"
 weight: 1
 hide_summary: true
 description: >
-  Learn more about unit, integration, system, and E2E Testing.
+  Learn more about how we select partners to properly align on goals and expectations.
 ---
 
 The partner selection process is designed to ensure that the GPS Code With team and the partner are properly aligned on goals and expectations. An initial discussion with the partner will be scheduled to educate the partner on the code with team and its engagement model. During this discussion, the partner opportunity will also be introduced to the code with team, covering the business drivers, high level timelines, partner staff resources dedicated to the project, potential tech stack, and how much existing software is expected to be reused.

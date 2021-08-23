@@ -2,9 +2,9 @@
 title: "Supported Tech Stacks"
 linkTitle: "Supported Tech Stacks"
 weight: 1
-hide_summary: true
+# hide_summary: true
 description: >
-  Learn more about unit, integration, system, and E2E Testing.
+  Learn more about the tech stacks GPSUS Code With supports.
 ---
 
 The GPS code-with team should only engage with partners who are building solutions with approved GPS code-with tech stacks. By supporting a limited number of tech stacks, the code-with team is able to ensure our expertise is in line with partner expectations.  

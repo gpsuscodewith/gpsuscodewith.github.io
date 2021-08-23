@@ -4,10 +4,8 @@ linkTitle: "Testing Methods"
 weight: 3
 hide_summary: true
 type: "docs"
-description: >
-  Learn more about unit, integration, system, and E2E Testing.
----
 
+---
 ## Horizontal Test
 
 This method is used very commonly. It occurs horizontally across the context of multiple applications. Take an example of a data ingest management system.

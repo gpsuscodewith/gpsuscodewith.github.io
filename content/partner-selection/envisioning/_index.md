@@ -4,7 +4,7 @@ linkTitle: "Envisioning"
 weight: 2
 hide_summary: true
 description: >
-  Learn more about unit, integration, system, and E2E Testing.
+  Learn more about what happens during the envisoning stage.
 ---
 
 # Envisioning Agenda

@@ -4,7 +4,7 @@ linkTitle: "Testing"
 weight: 1
 hide_summary: true
 description: >
-  Learn more about unit, integration, system, and E2E Testing.
+  Learn more about Unit, Integration, System, and E2E Testing.
 ---
 
 ## Unit vs Integration vs System vs E2E Testing

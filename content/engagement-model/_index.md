@@ -4,7 +4,7 @@ linkTitle: "Engagement Model"
 weight: 1
 hide_summary: true
 description: >
-  Learn more about unit, integration, system, and E2E Testing.
+  Learn more about our process from selection to post hand-off.
 ---
 
 
