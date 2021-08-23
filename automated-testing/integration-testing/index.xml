@@ -1,0 +1,18 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GPSUS Playbook – Integration Testing</title>
+    <link>https://github.com/gpsuscodewith/gpsuscodewith.github.io/automated-testing/integration-testing/</link>
+    <description>Recent content in Integration Testing on GPSUS Playbook</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	  <atom:link href="https://github.com/gpsuscodewith/gpsuscodewith.github.io/automated-testing/integration-testing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+  </channel>
+</rss>
