@@ -145,7 +145,6 @@
 <ul>
 <li><a href=#big-bang>Big Bang</a></li>
 <li><a href=#incremental-testing>Incremental Testing</a></li>
-<li><a href=#things-to-avoid>Things to Avoid</a></li>
 </ul>
 </li>
 <li><a href=#integration-testing-frameworks-and-tools>Integration Testing Frameworks and Tools</a></li>
@@ -192,9 +191,6 @@
 <p>Bottom up testing is when lower level modules are tested together. In the scenario, what is commonly referred to as drivers are used to emulate the behavior of higher level modules not yet complete or included in the integration test.</p>
 <p><img src=/img/bottomUp.jpeg alt="Bottom Up Integration Testing"></p>
 <p>A third approach known as the sandwich or hybrid model combines the bottom up and town down approaches to test lower and higher level components at the same time.</p>
-<h3 id=things-to-avoid>Things to Avoid</h3>
-<p>There is a tradeoff a developer must make between integration test code coverage and engineering cycles. With mock dependencies, test data, and multiple environments at test, too many integration tests are infeasible to maintain and become increasingly less meaningful. Too much mocking will slow down the test suite, make scaling difficult, and may be a sign the developer should consider other tests for the scenario such as acceptance or E2E.</p>
-<p>Integration tests of complex systems require high maintenance. Avoid testing business logic in integration tests by keeping test suites separate. Do not test beyond the acceptance criteria of the task and be sure to clean up any resources created for a given test. Additionally, avoid writing tests in a production environment. Instead, write them in a scaled-down copy environment.</p>
 <h2 id=integration-testing-frameworks-and-tools>Integration Testing Frameworks and Tools</h2>
 <p>Many tools and frameworks can be used to write both unit and integration tests. The following tools are for automating integration tests.</p>
 <ul>

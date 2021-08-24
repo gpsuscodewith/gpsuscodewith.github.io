@@ -144,7 +144,6 @@
 <li><a href=#unit-tests-have-several-goals>Unit tests have several goals:</a></li>
 </ul>
 </li>
-<li><a href=#evidence-and-measures>Evidence and Measures</a></li>
 <li><a href=#general-guidance>General Guidance</a>
 <ul>
 <li><a href=#writing-tests>Writing Tests</a></li>
@@ -181,9 +180,6 @@
 <li>Provide confidence to potential contributors</li>
 <li>Developer Documentation of API usage</li>
 </ul>
-<h2 id=evidence-and-measures>Evidence and Measures</h2>
-<p>The <a href=../../continuous-integration/CICD.md>CI/CD already requires badges in place</a> for every repo to quickly assess code coverage and test pass/fail.</p>
-<p>The team should also keep in an eye on tests that may not be running as part of every merge, i.e. integration and e2e test.</p>
 <h2 id=general-guidance>General Guidance</h2>
 <p>The scope of a unit test is small. Engineers should use good judgement to provide a reasonable amount of unit test based on complexity of the unit to be tested, aligning with the overall goal of 70-80% code coverage. Unit tests should exercise more than the &ldquo;happy path&rdquo; paying specific attention to returned error values or exceptions thrown.</p>
 <p>Bug fixes should start with a test that reliably reproduces the bug to ensure that a particular commit will fix the bug as intended. Existing tests will reduce risk of regressions introduced by the fix.</p>
@@ -206,7 +202,7 @@
 <li>Stateful applications restore state when re-started</li>
 </ul>
 <h2 id=specific-guidance>Specific Guidance</h2>
-<p>Languages and Platforms provide their own unit test tools and frameworks. In <a href=../CSE.md>CSE</a>, we prefer:</p>
+<p>Languages and Platforms provide their own unit test tools and frameworks:</p>
 <ul>
 <li>.NET / Visual Studio: <a href=https://docs.microsoft.com/en-us/visualstudio/test/unit-test-your-code>https://docs.microsoft.com/en-us/visualstudio/test/unit-test-your-code</a></li>
 <li>.NET / NUnit: <a href=http://nunit.org/>http://nunit.org/</a></li>
