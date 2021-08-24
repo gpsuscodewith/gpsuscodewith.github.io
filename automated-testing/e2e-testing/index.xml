@@ -1,20 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GPSUS Playbook – E2E Testing</title><link>/automated-testing/e2e-testing/</link><description>Recent content in E2E Testing on GPSUS Playbook</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="/automated-testing/e2e-testing/index.xml" rel="self" type="application/rss+xml"/><item><title>Automated-Testing: Test Type</title><link>/automated-testing/e2e-testing/test_type_template/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/automated-testing/e2e-testing/test_type_template/</guid><description>
-&lt;h1 id="test-type">~Test type~&lt;/h1>
-&lt;p>The document should start with a brief overview about the test type and what is covered in this document, the goal here is to provide a high-level description to help the reader understand what is covered to decide whether to continue reading or not.&lt;/p>
-&lt;h2 id="why-test-type-the-why">Why ~Test type~ [The Why]&lt;/h2>
-&lt;p>Start by describing the problem that this test type addresses, this should focus on the motivation behind the test type to aid the reader corelate this test type to the problem they are trying to resolve.&lt;/p>
-&lt;h2 id="test-type-design-blocks-the-what">~Test type~ Design Blocks [The What]&lt;/h2>
-&lt;p>In this section, describe the test type, its components, and how they interact to solve the problem described above.&lt;/p>
-&lt;h2 id="applying-the-test-type-the-how">Applying the ~test type~ [the how]&lt;/h2>
-&lt;p>In this section, describe what good testing looks like for this test type, discuss some of the best practices, discuss pitfalls to avoid, and finally discuss some of the common tools used to apply the test type, if any.&lt;/p>
-&lt;h2 id="test-type-frameworks-and-tools">~Test type~ Frameworks and Tools&lt;/h2>
-&lt;p>In this section, describe various test frameworks and tools, their pros and cons, and provide with the links to where to get more information.&lt;/p>
-&lt;h2 id="examplescase-studies">Examples/Case studies&lt;/h2>
-&lt;p>If available, list some good examples or case studies for this test type and elaborate on what is good about them.&lt;/p>
-&lt;h2 id="conclusion">Conclusion&lt;/h2>
-&lt;p>In conclusion, provide the final thoughts on why and how this type of test can help with your next customer engagement, what best practices and recommendations that can be withdrawn from the case studies and research.&lt;/p>
-&lt;h2 id="resources">Resources&lt;/h2>
-&lt;p>List additional readings about this test type for those that would like to dive deeper.&lt;/p></description></item><item><title>Automated-Testing: Testing Comparison</title><link>/automated-testing/e2e-testing/testing-comparison/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/automated-testing/e2e-testing/testing-comparison/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GPSUS Playbook – E2E Testing</title><link>/automated-testing/e2e-testing/</link><description>Recent content in E2E Testing on GPSUS Playbook</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="/automated-testing/e2e-testing/index.xml" rel="self" type="application/rss+xml"/><item><title>Automated-Testing: Testing Comparison</title><link>/automated-testing/e2e-testing/testing-comparison/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/automated-testing/e2e-testing/testing-comparison/</guid><description>
 &lt;h1 id="unit-vs-integration-vs-system-vs-e2e-testing">Unit vs Integration vs System vs E2E Testing&lt;/h1>
 &lt;p>To better understand which testing methodology when to apply it in your project, the below table illustrates the most critical characteristics and differences between Unit, Integration, System and End-to-End testing:&lt;/p>
 &lt;table>
