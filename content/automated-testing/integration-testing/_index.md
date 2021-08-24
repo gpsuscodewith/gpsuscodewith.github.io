@@ -50,11 +50,11 @@ Bottom up testing is when lower level modules are tested together. In the scenar
 
 A third approach known as the sandwich or hybrid model combines the bottom up and town down approaches to test lower and higher level components at the same time.
 
-### Things to Avoid
+<!-- ### Things to Avoid
 
 There is a tradeoff a developer must make between integration test code coverage and engineering cycles. With mock dependencies, test data, and multiple environments at test, too many integration tests are infeasible to maintain and become increasingly less meaningful. Too much mocking will slow down the test suite, make scaling difficult, and may be a sign the developer should consider other tests for the scenario such as acceptance or E2E.
 
-Integration tests of complex systems require high maintenance. Avoid testing business logic in integration tests by keeping test suites separate. Do not test beyond the acceptance criteria of the task and be sure to clean up any resources created for a given test. Additionally, avoid writing tests in a production environment. Instead, write them in a scaled-down copy environment.
+Integration tests of complex systems require high maintenance. Avoid testing business logic in integration tests by keeping test suites separate. Do not test beyond the acceptance criteria of the task and be sure to clean up any resources created for a given test. Additionally, avoid writing tests in a production environment. Instead, write them in a scaled-down copy environment. -->
 
 ## Integration Testing Frameworks and Tools
 

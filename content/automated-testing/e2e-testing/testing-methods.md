@@ -22,11 +22,11 @@ In this method, all most critical transactions of any application are verified a
 
  In such case, each layer (tier) is required to be fully tested in conjunction with the "connected" layers above and beneath, in which services "talk" to each other during the end to end data flow. All these complex testing scenarios will require proper validation and dedicated automated testing. Thus this method is much more difficult.
 
-## E2E Test Cases Design Guidances
+<!-- ## E2E Test Cases Design Guidances
 
 Below enlisted are few **guidelines** that should be kept in mind while designing the test cases for performing E2E testing:
 
 - Test cases should be designed from the end user’s perspective.
 - Should focus on testing some existing features of the system.
 - Multiple scenarios should be considered for creating multiple test cases.
-- Different sets of test cases should be created to focus on multiple scenarios of the system.
+- Different sets of test cases should be created to focus on multiple scenarios of the system. -->

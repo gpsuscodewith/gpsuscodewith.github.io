@@ -15,7 +15,7 @@ At times, these systems are developed in different technologies by different tea
 
 ![End to End Testing](/img/e2e-testing.png)
 
-## Why E2E Testing [The Why]
+## Why E2E Testing 
 
 In many commercial software application scenarios, a modern software system comprises of its interconnection with multiple sub-systems. These sub-systems can be within the same organization or can be components of different organizations. Also, these sub-systems can have somewhat similar or different lifetime release cycle from the current system. As a result, if there is any failure or fault in any sub-system, it can adversely affect the whole software system leading to its collapse.
 
@@ -25,7 +25,7 @@ The above illustration is a testing pyramid from [Kent C. Dodd’s blog](https:/
 
 The majority of your tests are at the bottom of the pyramid. As you move up the pyramid, the number of tests gets smaller. Also, going up the pyramid, tests get slower and more expensive to write, run, and maintain. Each type of testing vary for its purpose, application and the areas it suppose to cover. 
 
-## E2E Testing Design Blocks [The What]
+## E2E Testing Design Blocks 
 
 ![E2E Testing Design Framework](/img/e2e-blocks.png)
 
@@ -111,8 +111,8 @@ Gauge is a free and open source framework for writing and running E2E tests. Som
 - A modular architecture with plugins support.
 - Supports data driven execution and external data sources.
 - Helps you create maintainable test suites.
-- Supports Visual Studio Code, Intellij IDEA, IDE Support.
-- Supports html, json and XML reporting.
+<!-- - Supports Visual Studio Code, Intellij IDEA, IDE Support.
+- Supports html, json and XML reporting. -->
 
 => [Gauge Framework Website](https://gauge.org/)
 
@@ -121,8 +121,8 @@ Gauge is a free and open source framework for writing and running E2E tests. Som
 ![Robot Framework](/img/robot.jpg)
 
 Robot Framework is a generic open source automation framework. The framework has easy syntax, utilizing human-readable keywords. Its capabilities can be extended by libraries implemented with Python or Java.
-
-Robot shares a lot of the same "pros" as Gauge, with the exception of the developer tooling and the syntax. In our usage, we found the VS Code Intellisense offered with Gauge to be much more stable than the offerings for Robot. We also found the syntax to be less readable than what Gauge offered. While both frameworks allow for markup based test case definitions, the Gauge syntax reads much more like an English sentence than Robot. Finally, Intellisense is baked into the markup files for Gauge test cases, which will create a function stub for the actual test definition if the developer allows it. The same cannot be said of the Robot Framework.
+<!-- 
+Robot shares a lot of the same "pros" as Gauge, with the exception of the developer tooling and the syntax. In our usage, we found the VS Code Intellisense offered with Gauge to be much more stable than the offerings for Robot. We also found the syntax to be less readable than what Gauge offered. While both frameworks allow for markup based test case definitions, the Gauge syntax reads much more like an English sentence than Robot. Finally, Intellisense is baked into the markup files for Gauge test cases, which will create a function stub for the actual test definition if the developer allows it. The same cannot be said of the Robot Framework. -->
 
 => [Robot Framework Website](https://robotframework.org/#introduction)
 
@@ -131,8 +131,8 @@ Robot shares a lot of the same "pros" as Gauge, with the exception of the develo
 ![TestCraft](/img/TestCraft-logo.png)
 
 TestCraft is a codeless Selenium test automation platform. Its revolutionary AI technology and unique visual modeling allow for faster test creation and execution while eliminating test maintenance overhead.
-
-The testers create fully automated test scenarios without coding. Customers find bugs faster, release more frequently, integrate with the CI/CD approach and improve the overall quality of their digital products. This all creates a complete end to end testing experience.
+<!-- 
+The testers create fully automated test scenarios without coding. Customers find bugs faster, release more frequently, integrate with the CI/CD approach and improve the overall quality of their digital products. This all creates a complete end to end testing experience. -->
 
 => [TestCraft Website](https://www.testcraft.io/?utm_campaign=SoftwareTestingHelp%20&utm_source=SoftwareTestingHelp&utm_medium=EndtoEndTestingPage) or get it  from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=testcraft.build-release-task)
 
@@ -141,8 +141,8 @@ The testers create fully automated test scenarios without coding. Customers find
 ![Ranorex Studio](/img/ranorex-studio2.png)
 
 **Ranorex Studio** is a complete end-to-end test automation tool for desktop, web, and mobile applications. Create reliable tests fast without any coding at all, or using the full IDE. Use external CSV or Excel files or a SQL database as inputs to your tests.
-
-Run tests in parallel or on a Selenium Grid with built-in Selenium WebDriver. Ranorex Studio integrates with your CI/CD process to shorten your release cycles without sacrificing quality.
+<!-- 
+Run tests in parallel or on a Selenium Grid with built-in Selenium WebDriver. Ranorex Studio integrates with your CI/CD process to shorten your release cycles without sacrificing quality. -->
 
 **Ranorex Studio** tests also integrate with Azure DevOps (AzDO), which can be run as part of a build pipeline in AzDO.
 
@@ -153,12 +153,12 @@ Run tests in parallel or on a Selenium Grid with built-in Selenium WebDriver. Ra
 ![Katalon](/img/New-Logo-Katalon-Studio.png)
 
 **Katalon Studio** is an excellent end-to-end automation solution for web, API, mobile, and desktop testing with DevOps support.
-
+<!-- 
 With Katalon Studio, automated testing can be easily integrated into any CI/CD pipeline to release products faster while guaranteeing high quality. Katalon Studio customizes for users from beginners to experts. Robust functions such as Spying, Recording, Dual-editor interface and Custom Keywords make setting up, creating and maintaining tests possible for users.
 
 Built on top of Selenium and Appium, Katalon Studio helps standardize your end-to-end tests standardized. It also complies with the most popular frameworks to work seamlessly with other tools in the automated testing ecosystem.
 
-Katalon is endorsed by Gartner, IT professionals, and a large testing community.
+Katalon is endorsed by Gartner, IT professionals, and a large testing community. -->
 
 >Note: At the time of this writing, Katalon Studio extension for AzDO was NOT available for Linux.
 

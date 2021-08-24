@@ -17,12 +17,11 @@ Unit tests play an integral role in building quality software and enabling agile
 - Support fast code evolution and refactoring while reducing the risk of regressions
 - Provide confidence to potential contributors
 - Developer Documentation of API usage
+<!-- ## Evidence and Measures
 
-## Evidence and Measures
+The CI/CD already requires badges in place for every repo to quickly assess code coverage and test pass/fail.
 
-The [CI/CD already requires badges in place](../../continuous-integration/CICD.md) for every repo to quickly assess code coverage and test pass/fail.
-
-The team should also keep in an eye on tests that may not be running as part of every merge, i.e. integration and e2e test.
+The team should also keep in an eye on tests that may not be running as part of every merge, i.e. integration and e2e test. -->
 
 ## General Guidance
 
@@ -54,7 +53,7 @@ For more complex applications, unit tests also ensure:
 
 ## Specific Guidance
 
-Languages and Platforms provide their own unit test tools and frameworks. In [CSE](../CSE.md), we prefer:
+Languages and Platforms provide their own unit test tools and frameworks:
 
 - .NET / Visual Studio: <https://docs.microsoft.com/en-us/visualstudio/test/unit-test-your-code>
 - .NET / NUnit: <http://nunit.org/>
