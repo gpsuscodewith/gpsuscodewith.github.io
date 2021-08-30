@@ -15,18 +15,18 @@
 <link rel=icon type=image/png href=/favicons/android-144x144.png sizes=144x144>
 <link rel=icon type=image/png href=/favicons/android-192x192.png sizes=192x192>
 <title>Engineering Fundamental Checklist | GPSUS Playbook</title>
-<meta name=description content="This checklist helps to ensure that our projects meet our Engineering Fundamentals.
+<meta name=description content="This checklist helps to ensure that our engagements meet what we call our Engineering Fundamentals.
 ">
 <meta property="og:title" content="Engineering Fundamental Checklist">
-<meta property="og:description" content="This checklist helps to ensure that our projects meet our Engineering Fundamentals.
+<meta property="og:description" content="This checklist helps to ensure that our engagements meet what we call our Engineering Fundamentals.
 ">
 <meta property="og:type" content="website">
 <meta property="og:url" content="/engineering-fundamental-checklist/">
 <meta itemprop=name content="Engineering Fundamental Checklist">
-<meta itemprop=description content="This checklist helps to ensure that our projects meet our Engineering Fundamentals.
+<meta itemprop=description content="This checklist helps to ensure that our engagements meet what we call our Engineering Fundamentals.
 "><meta name=twitter:card content="summary">
 <meta name=twitter:title content="Engineering Fundamental Checklist">
-<meta name=twitter:description content="This checklist helps to ensure that our projects meet our Engineering Fundamentals.
+<meta name=twitter:description content="This checklist helps to ensure that our engagements meet what we call our Engineering Fundamentals.
 ">
 <link rel=preload href=/scss/main.min.c7864c5e11ce29b0d7fb95d2fbbc92f0cd7d92caacfebfa74a46b09df7d22072.css as=style>
 <link href=/scss/main.min.c7864c5e11ce29b0d7fb95d2fbbc92f0cd7d92caacfebfa74a46b09df7d22072.css rel=stylesheet integrity>
@@ -139,16 +139,19 @@
 </div>
 <div class=td-toc><nav id=TableOfContents>
 <ul>
+<li><a href=#overview>Overview</a>
+<ul>
+<li><a href=#what-if-we-arent-practicing-these-fundaments>What if we aren&rsquo;t practicing these fundaments?</a></li>
+</ul>
+</li>
 <li><a href=#source-control>Source Control</a></li>
 <li><a href=#work-item-tracking>Work Item Tracking</a></li>
-<li><a href=#testing>Testing</a></li>
 <li><a href=#cicd>CI/CD</a></li>
 <li><a href=#security>Security</a></li>
 <li><a href=#observability>Observability</a></li>
-<li><a href=#agilescrum>Agile/Scrum</a></li>
+<li><a href=#software-development-methodology>Software Development Methodology</a></li>
 <li><a href=#design-reviews>Design Reviews</a></li>
 <li><a href=#code-reviews>Code Reviews</a></li>
-<li><a href=#retrospectives>Retrospectives</a></li>
 <li><a href=#engineering-feedback>Engineering Feedback</a></li>
 <li><a href=#developer-experience-devex>Developer Experience (DevEx)</a></li>
 </ul>
@@ -164,102 +167,75 @@
 </nav>
 <div class=td-content>
 <h1>Engineering Fundamental Checklist</h1>
-<div class=lead>This checklist helps to ensure that our projects meet our Engineering Fundamentals.</div>
+<div class=lead>This checklist helps to ensure that our engagements meet what we call our Engineering Fundamentals.</div>
 <header class=article-meta>
 </header>
+<h2 id=overview>Overview</h2>
+<p>This checklist is intented to help our partners understand the fundamental practices we expect your development team(s) are adhering to. There are other types of checklists out there, and we&rsquo;ve chosen the minimum set of practices that</p>
+<h3 id=what-if-we-arent-practicing-these-fundaments>What if we aren&rsquo;t practicing these fundaments?</h3>
+<p>The first step is to use the checklist and mark off what you are practicing! Evaluate your level of maturity and have a conversation with one of our Technical Strategists where you share a plan to implement the practices. Once complete, a Code-with will be able to engage with you.</p>
 <h2 id=source-control>Source Control</h2>
 <ul>
 <li><input disabled type=checkbox> The default target branch is locked.</li>
 <li><input disabled type=checkbox> Merges are done through PRs.</li>
 <li><input disabled type=checkbox> PRs reference related work items.</li>
-<li><input disabled type=checkbox> Commit history is consistent and commit messages are informative (what, why).</li>
-<li><input disabled type=checkbox> Consistent branch naming conventions.</li>
 <li><input disabled type=checkbox> Clear documentation of repository structure.</li>
-<li><input disabled type=checkbox> Secrets are not part of the commit history or made public. (see <a href=continuous-integration/dev-sec-ops/secret-management/credential_scanning.md>Credential scanning</a>)</li>
-<li><input disabled type=checkbox> Public repositories follow the <a href=source-control/README.md#creating-a-new-repository>OSS guidelines</a>, see <code>Required files in default branch for public repositories</code>.</li>
+<li><input disabled type=checkbox> Secrets are not part of the commit history or made public.</li>
 </ul>
-<p>More details on <a href=source-control/README.md>source control</a></p>
+<p>More details on <a href=https://docs.microsoft.com/en-us/devops/develop/git/what-is-version-control>source control</a></p>
 <h2 id=work-item-tracking>Work Item Tracking</h2>
 <ul>
-<li><input disabled type=checkbox> All items are tracked in AzDevOps (or similar).</li>
-<li><input disabled type=checkbox> The board is organized (swim lanes, feature tags, technology tags).</li>
+<li><input disabled type=checkbox> A platform is used for backlogs, planning, etc.</li>
+<li><input disabled type=checkbox> The board is organized and work items are prioritized</li>
 </ul>
-<p>More details on <a href=agile-development/backlog-management/README.md>backlog management</a></p>
-<h2 id=testing>Testing</h2>
-<ul>
-<li><input disabled type=checkbox> Unit tests cover the majority of all components (>90% if possible).</li>
-<li><input disabled type=checkbox> Integration tests run to test the solution e2e.</li>
-</ul>
-<p>More details on <a href=../automated-testing>automated testing</a></p>
 <h2 id=cicd>CI/CD</h2>
 <ul>
-<li><input disabled type=checkbox> Project runs CI with automated build and test on each PR.</li>
-<li><input disabled type=checkbox> Project uses CD to manage deployments to a replica environment before PRs are merged.</li>
-<li><input disabled type=checkbox> Main branch is always shippable.</li>
+<li><input disabled type=checkbox> CI (Continuous Integration) with automated builds from the default branch</li>
+<li><input disabled type=checkbox> CD (Continuous Deployment) to manage deployments to a replica environment before PRs are merged.</li>
+<li><input disabled type=checkbox> Main branch should be shippable.</li>
 </ul>
-<p>More details on <a href=continuous-integration/README.md>continuous integration</a> and <a href=continuous-delivery/README.md>continuous delivery</a></p>
+<p>More details on <a href=https://www.thoughtworks.com/en-us/insights/blog/guidelines-structuring-automated-tests>automated testing</a>
+More details on <a href=https://docs.microsoft.com/en-us/devops/develop/what-is-continuous-integration>continuous integration</a> and <a href=https://docs.microsoft.com/en-us/devops/deliver/what-is-continuous-delivery>continuous delivery</a></p>
 <h2 id=security>Security</h2>
 <ul>
-<li><input disabled type=checkbox> Access is only granted on an as needed bases</li>
-<li><input disabled type=checkbox> Secrets are stored in secured locations and not checked in to code</li>
-<li><input disabled type=checkbox> Data is encrypted in transit (and if necessary at rest) and passwords are hashed</li>
-<li><input disabled type=checkbox> Is the system split into logical segments with separation of concerns? This helps limiting security vulnerabilities.</li>
+<li><input disabled type=checkbox> Access is able to be granted on an as needed bases</li>
+<li><input disabled type=checkbox> Secrets are stored in secured storage</li>
+<li><input disabled type=checkbox> Secrets are not checked in to source control</li>
 </ul>
-<p>More details on <a href=../security>security</a></p>
+<p>More details on <a href=https://www.microsoft.com/en-us/securityengineering/devsecops>security</a></p>
 <h2 id=observability>Observability</h2>
 <ul>
-<li><input disabled type=checkbox> Significant business and functional events are tracked and related metrics collected.</li>
+<li><input disabled type=checkbox> Capable of implementing logging of business and functional events and collect metrics.</li>
 <li><input disabled type=checkbox> Application faults and errors are logged.</li>
-<li><input disabled type=checkbox> Health of the system is monitored.</li>
-<li><input disabled type=checkbox> The client and server side observability data can be differentiated.</li>
-<li><input disabled type=checkbox> Logging configuration can be modified without code changes (eg: verbose mode).</li>
-<li><input disabled type=checkbox> <a href=observability/correlation-id.md>Incoming tracing context</a> is propagated to allow for production issue debugging purposes.</li>
+<li><input disabled type=checkbox> Health of the system can be monitored.</li>
 <li><input disabled type=checkbox> GDPR compliance is ensured regarding PII (Personally Identifiable Information).</li>
 </ul>
-<p>More details on <a href=observability/README.md>observability</a></p>
-<h2 id=agilescrum>Agile/Scrum</h2>
+<p>More details on <a href=https://martinfowler.com/articles/domain-oriented-observability.html>observability</a></p>
+<h2 id=software-development-methodology>Software Development Methodology</h2>
 <ul>
-<li><input disabled type=checkbox> Process Lead (fixed/rotating) runs the daily standup</li>
-<li><input disabled type=checkbox> The agile process is clearly defined within team.</li>
+<li><input disabled type=checkbox> The process is clearly defined within team (a specific agile practice for example).</li>
 <li><input disabled type=checkbox> The Dev Lead (+ PO/Others) are responsible for backlog management and refinement.</li>
-<li><input disabled type=checkbox> A working agreement is established between team members and customer.</li>
 </ul>
-<p>More details on <a href=agile-development/README.md>agile development</a></p>
 <h2 id=design-reviews>Design Reviews</h2>
 <ul>
-<li><input disabled type=checkbox> Process for conducting design reviews is included in the <a href=../team-agreements>Working Agreement</a>.</li>
 <li><input disabled type=checkbox> Design reviews for each major component of the solution are carried out and documented, including alternatives.</li>
-<li><input disabled type=checkbox> Stories and/or PRs link to the design document.</li>
-<li><input disabled type=checkbox> Each user story includes a task for design review by default, which is assigned or removed during sprint planning.</li>
-<li><input disabled type=checkbox> Project advisors are invited to design reviews or asked to give feedback to the design decisions captured in documentation.</li>
-<li><input disabled type=checkbox> Discover all the reviews that the customer&rsquo;s processes require and plan for them.</li>
-<li><input disabled type=checkbox> Clear non-functional requirements captured (see <a href=design/design-patterns/non-functional-requirements-capture-guide.md>Non-Functional Requirements Guidance</a>)</li>
+<li><input disabled type=checkbox> Stories and/or PRs link to a design document when one exists.</li>
+<li><input disabled type=checkbox> Clear non-functional requirements captured</li>
 </ul>
-<p>More details on <a href=design/design-reviews/README.md>design reviews</a></p>
 <h2 id=code-reviews>Code Reviews</h2>
 <ul>
 <li><input disabled type=checkbox> There is a clear agreement in the team as to function of code reviews.</li>
 <li><input disabled type=checkbox> The team has a code review checklist or established process.</li>
-<li><input disabled type=checkbox> A minimum number of reviewers (usually 2) for a PR merge is enforced by policy.</li>
-<li><input disabled type=checkbox> Linters/Code Analyzers, unit tests and successful builds for PR merges are set up.</li>
-<li><input disabled type=checkbox> There is a process to enforce a quick review turnaround.</li>
+<li><input disabled type=checkbox> A minimum number of reviewers (usually 2) for a PR merge is able to be enforced.</li>
+<li><input disabled type=checkbox> Capable of setting up any Linters/Code Analyzers, unit tests and successful builds for PR merges.</li>
+<li><input disabled type=checkbox> There is a process for a quick review turnaround.</li>
 </ul>
-<p>More details on <a href=code-reviews/README.md>code reviews</a></p>
-<h2 id=retrospectives>Retrospectives</h2>
-<ul>
-<li><input disabled type=checkbox> Retrospectives are conducted each week/at the end of each sprint.</li>
-<li><input disabled type=checkbox> The team identifies 1-3 proposed experiments to try each week/sprint to improve the process.</li>
-<li><input disabled type=checkbox> Experiments have owners and are added to project backlog.</li>
-<li><input disabled type=checkbox> The team conducts longer retrospective for Milestones and project completion.</li>
-</ul>
-<p>More details on <a href=../retrospectives>retrospectives</a></p>
 <h2 id=engineering-feedback>Engineering Feedback</h2>
 <ul>
 <li><input disabled type=checkbox> The team submits feedback on business and technical blockers that prevent project success</li>
 <li><input disabled type=checkbox> Suggestions for improvements are incorporated in the solution</li>
 <li><input disabled type=checkbox> Feedback is detailed and repeatable</li>
 </ul>
-<p>More details on <a href=engineering-feedback/README.md>engineering feedback</a></p>
 <h2 id=developer-experience-devex>Developer Experience (DevEx)</h2>
 <p>Developers on the team can:</p>
 <ul>
@@ -267,10 +243,9 @@
 <li><input disabled type=checkbox> Execute all automated tests (unit, e2e, etc).</li>
 <li><input disabled type=checkbox> Start/Launch end-to-end to simulate execution in a deployed environment.</li>
 <li><input disabled type=checkbox> Attach a debugger to started solution or running automated tests, set breakpoints, step through code, and inspect variables.</li>
-<li><input disabled type=checkbox> Automatically install dependencies by pressing F5 (or equivalent) in their IDE.</li>
-<li><input disabled type=checkbox> Use local dev configuration values (i.e. .env, appsettings.development.json).</li>
+<li><input disabled type=checkbox> Automatically install dependencies</li>
+<li><input disabled type=checkbox> Use local dev configuration values (i.e. .env, *.properties, appsettings.development.json).</li>
 </ul>
-<p>More details on <a href=../developer-experience>developer experience</a></p>
 <div class=section-index>
 </div>
 <div class="text-muted mt-5 pt-3 border-top">
