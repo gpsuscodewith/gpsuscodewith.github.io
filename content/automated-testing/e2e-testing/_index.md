@@ -54,7 +54,7 @@ Following factors should be considered for building test cases:
 - For every scenario, one or more test cases should be created to test each and every functionality of the user functions. If possible, these test cases should be automated thru the standard CI/CD build pipeline processes with the track of each successful and failed build in AzDO.
 - Every single condition should be enlisted as a separate test case.
 
-## Applying the E2E testing [The How]
+## Applying the E2E testing
 
 Like any other testing, E2E testing also goes through formal planning, test execution, and closure phases.
 
