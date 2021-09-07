@@ -1,6 +1,6 @@
 ---
-title: "Documentation"
-linkTitle: "Documentation"
+title: "Playbook"
+linkTitle: "Playbook"
 type: "docs"
 hide_summary: true
 weight: 20
