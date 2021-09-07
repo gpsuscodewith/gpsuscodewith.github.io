@@ -2,7 +2,7 @@
 <head>
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
-<meta name=generator content="Hugo 0.88.0"><link rel=alternate type=application/rss+xml href=/partner-selection/index.xml>
+<meta name=generator content="Hugo 0.88.1"><link rel=alternate type=application/rss+xml href=/partner-selection/index.xml>
 <meta name=ROBOTS content="NOINDEX, NOFOLLOW">
 <link rel="shortcut icon" href=/favicons/favicon.ico>
 <link rel=apple-touch-icon href=/favicons/apple-touch-icon-180x180.png sizes=180x180>
@@ -76,8 +76,8 @@
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id=m-partner-selection-li>
 <a href=/partner-selection/ class="align-left pl-0 active td-sidebar-link td-sidebar-link__section" id=m-partner-selection><span class=td-sidebar-nav-active-item>Partner Selection</span></a>
 <ul class="ul-2 foldable">
-<li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-partner-selectionenvisioning-li>
-<a href=/partner-selection/envisioning/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-partner-selectionenvisioning><span>Envisioning</span></a>
+<li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-partner-selectionprepare-plan-li>
+<a href=/partner-selection/prepare-plan/ class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id=m-partner-selectionprepare-plan><span>Preparation & Planning</span></a>
 </li>
 </ul>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id=m-retrospectives-li>
@@ -139,13 +139,18 @@
 </div>
 <div class=td-toc><nav id=TableOfContents>
 <ul>
-<li><a href=#envisioning>Envisioning</a>
+<li><a href=#qualification-process>Qualification process</a></li>
+<li><a href=#preparation>Preparation</a>
 <ul>
-<li><a href=#envisioning-session>Envisioning Session</a></li>
-<li><a href=#architectural-design-session>Architectural Design Session</a></li>
+<li><a href=#exit-criteria>Exit criteria</a></li>
 </ul>
 </li>
-<li><a href=#post-envisioning>Post-Envisioning</a></li>
+<li><a href=#planning>Planning</a>
+<ul>
+<li><a href=#prerequisites>Prerequisites</a></li>
+<li><a href=#architectural-design>Architectural design</a></li>
+</ul>
+</li>
 </ul>
 </nav></div>
 </aside>
@@ -162,16 +167,27 @@
 <div class=lead>Learn more about how we select partners to properly align on goals and expectations.</div>
 <header class=article-meta>
 </header>
-<p>The partner selection process is designed to ensure that the GPS Code With team and the partner are properly aligned on goals and expectations. An initial discussion with the partner will be scheduled to educate the partner on the code with team and its engagement model. During this discussion, the partner opportunity will also be introduced to the code with team, covering the business drivers, high level timelines, partner staff resources dedicated to the project, potential tech stack, and how much existing software is expected to be reused.</p>
-<p>If the initial call with the partner indicates that this could be a potential fit for both the partner and GPS, an envisioning session will be scheduled for a mutually agreed upon time.</p>
-<h2 id=envisioning>Envisioning</h2>
-<p>The envisioning phase in intended to gain a detailed technical understanding of the technical architecture, development practices, and environment, so that both the code with team and partner can make a descision on whether or not to move forward with scheduling the project. The envisioning phase is made up to two distinct sessions that can be scheduled consecutively or at different times. The two sessions are:</p>
+<h2 id=qualification-process>Qualification process</h2>
+<p>The GPS Code-with team will align with the parnter on goals and expectations. Initial discussions will be had that educate the partner on the Code-with team and how it engages. A technical strategist will see to understand and qualify things like:</p>
 <ul>
-<li>Envisioning Session (1 day)</li>
-<li>Architectural Design Session (2-3 days)</li>
+<li>Business drivers</li>
+<li>High level timelines</li>
+<li>Development resources dedicated to the project</li>
+<li>The targeted technologies</li>
+<li>Existing software that will be integrated, expanded, or reused</li>
 </ul>
-<h3 id=envisioning-session>Envisioning Session</h3>
-<p>The envisioning session is a one day session focused on deeper review of the business drivers and team readiness to execute. By the end of the envisioning session, the OCP Code With team should have an in depth understanding of:</p>
+<h2 id=preparation>Preparation</h2>
+<p>Once these things have been understood, a representative from the Code-with team will engage and begin the process of preparation.</p>
+<p>The planning phase in intended to gain a detailed technical understanding of the technical architecture, development practices, and environment, so that both the Code-with team and partner can make a descision on whether or not to move forward with scheduling the planning proces. This includes</p>
+<ul>
+<li>User story analysis and backlog review</li>
+<li>Scoping technial requirements</li>
+<li>Execution of legal agreements with Microsoft</li>
+</ul>
+<h3 id=exit-criteria>Exit criteria</h3>
+<p>By the end of this process, a go/no-go decision is made to code with for the project, and initial scheduling is discussed. Scheduling accounts for both the Code-with and partner availability and pre-requisite work that may have been identified.</p>
+<h2 id=planning>Planning</h2>
+<p>During planning, we will review the business drivers and team readiness to execute. By the end, the Code-with team should have an in depth understanding of:</p>
 <ul>
 <li>Current and/or targeted DevOps practices</li>
 <li>User story backlog</li>
@@ -181,8 +197,16 @@
 <li>Project budget</li>
 <li>Compliance requirements</li>
 </ul>
-<h3 id=architectural-design-session>Architectural Design Session</h3>
-<p>The architecture design session phase of envisioning could typically last 2-3 depending on the level of depth that was covered by previous architecture design sessions with the partner. The architecture design session in the code-with envisioning phase usually dives deeper into the application layer rather than staying at the higher solution level. It is critical that the partner includes all relevant technical resources in the architectural design session so that unknowns are kept to a minimum when entering the development phase. The architectural design session is the main opportunity to ensure there are no delays or blockers early into the development phase due to unforseen issues or requirements.</p>
+<h3 id=prerequisites>Prerequisites</h3>
+<p>Prerequisite work would include things like:</p>
+<ul>
+<li>Environment setup</li>
+<li>User provisioning and permissions</li>
+<li>Migration of code/data to new environment</li>
+</ul>
+<h3 id=architectural-design>Architectural design</h3>
+<p>The architecture design session phase of envisioning could typically last 2-3 depending on the level of depth that was covered by previous architecture design sessions with the partner. The architecture design session in the code-with envisioning phase usually dives deeper into the application layer rather than staying at the higher solution level.</p>
+<p>It is critical that the partner includes all relevant technical resources in the architectural design session so that unknowns are kept to a minimum when entering the development phase. The architectural design session is the main opportunity to ensure there are no delays or blockers early into the development phase due to unforseen issues or requirements.</p>
 <p>By the end of the architectural design session, the GPS code-with team should have a solid understanding of the following:</p>
 <ul>
 <li>Non-functional requirements such as performance/scale targets, availability targets, etc.</li>
@@ -196,13 +220,6 @@
 <li>Team dependencies</li>
 <li>Migration requirements prior to development (data, source code, etc)</li>
 <li>RBAC requirements for team members</li>
-</ul>
-<h2 id=post-envisioning>Post-Envisioning</h2>
-<p>At the end of the envisioning session, a go/no-go decision will be made so to wheter or not the project will be scheduled. Scheduling of the inital sprint will be based off both the partner/GPS availability, and any pre-requisite work that was identified during the envisioning phase. Pre-requisite work would include things like:</p>
-<ul>
-<li>Environment setup</li>
-<li>User provisioning and permissions</li>
-<li>Migration of code/data to new environment</li>
 </ul>
 <div class=section-index>
 </div>
