@@ -1,22 +1,22 @@
 ---
-title: "Envisioning"
-linkTitle: "Envisioning"
+title: "Preparation & Planning"
+linkTitle: "Preparation & Planning"
 weight: 2
 hide_summary: true
 description: >
   Learn more about what happens during the envisoning stage.
 ---
 
-# Envisioning Agenda
+# Overview
 
-The Code-with envisioning has the following structure:
+The Code-with Preparation & Planning has the following structure:
 
-* Architecture Review 
 * Technical Deep Dives
 * Backlog Review
+* Architecture Review 
 * Next Steps / Planning
 
-### 1. Architecture Review
+## 1. Architecture Review
 
 The architecture review is partner-lead and covers the current architecture or proposed architecture (if one has already been chosen). The context is the 
 
@@ -38,7 +38,7 @@ For the architecture review, it is helpful if the partner is able to provide any
 * Software stack / frameworks
 
 
-### 2. Technical Deep Dives
+## Technical Deep Dives
 
 The technical deep dive is used to dig into the physical architecture of the current or proposed solution. There will be more focus on the non-functional requirements, software stacks, domain model, storage design, etc.
 
@@ -50,7 +50,7 @@ For the technical deep dive, it is helpful if the partner is able to provide any
 * Migration requirements prior to development (data, source code, etc)
 
 
-### 3. Backlog Review
+## Backlog Review
 
 During the backlog review, the team reviews (or creates collaboratively) the user stories.  During code-with sprints, the code-with team will work on user stories from the backlog, so the output of this session is a populated and understood backlog of user stories.  
 
@@ -58,11 +58,15 @@ The partner should be prepared to share and describe existing user stories / bac
 
 Key participants that should be present include the business/domain subject matter experts.
 
-### 4. Next Steps / Planning
+## Next Steps / Planning
 
-This session is meant to plan out the post-envisioning session and potentially schedule some initial code-with sprints.  There may be cases where partners need to set up their Azure environments, provision users according to their roles, or migrate any needed data or infrastructure resources.
+The planning sessions create the engagement details and schedule the first week of code-with.  There may be cases where the engagement requires set up of things like:
 
-The key output of this session is:
+- Azure environments
+- provision users according to their roles
+- migrate any needed data or infrastructure resources
+
+The key outputs include is:
 
 * Identify prerequisites for code-with engagement
 * Schedule sprint 0
@@ -71,8 +75,8 @@ The key output of this session is:
 
 ### Virtual 4-Session Agenda
 
-A virtual series of four sessions is used to cover the envisioning and architectural design sessions.  This would be used as an alternative to an in-person, all-day Envisioning and Architectural Design Sessions process.  The four sessions would be segmented according to structure previously defined.
+A virtual series of four sessions is used to cover the Preparation & Planning and architectural design sessions.  This would be used as an alternative to an in-person, all-day Preparation & Planning and Architectural Design Sessions process.  The four sessions would be segmented according to structure previously defined.
 
 ### In Person / All Day
 
-The code-with team would arrange an onsite or agreed upon location to deliver the full envisioning with the partner.
+The code-with team would arrange an onsite or agreed upon location to deliver the full Preparation & Planning with the partner.

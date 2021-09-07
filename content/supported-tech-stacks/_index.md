@@ -4,7 +4,7 @@ linkTitle: "Supported Tech Stacks"
 weight: 1
 # hide_summary: true
 description: >
-  Learn more about the tech stacks GPSUS Code With supports.
+  Learn more about the tech stacks GPSUS Code-with supports.
 ---
 
 The GPS code-with team should only engage with partners who are building solutions with approved GPS code-with tech stacks. By supporting a limited number of tech stacks, the code-with team is able to ensure our expertise is in line with partner expectations.  
