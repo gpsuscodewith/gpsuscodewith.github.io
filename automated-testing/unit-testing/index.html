@@ -142,11 +142,7 @@
 <li><a href=#unit-tests-have-several-goals>Unit tests have several goals:</a></li>
 </ul>
 </li>
-<li><a href=#general-guidance>General Guidance</a>
-<ul>
-<li><a href=#writing-tests>Writing Tests</a></li>
-</ul>
-</li>
+<li><a href=#general-guidance>General Guidance</a></li>
 <li><a href=#specific-guidance>Specific Guidance</a></li>
 <li><a href=#resources>Resources</a></li>
 </ul>
@@ -184,21 +180,6 @@
 <p>Unit testing works in conjunction with integration tests and end-to-end tests for larger pieces of functionality.</p>
 <p>In order to keep execution of unit tests fast and executable as part of a CI/CD pipeline, tests can provide mock implementations of other parts of the application or 3rd party services.</p>
 <p>For integration or end-to-end testing, mocks should be replaced with API calls to the system they are simulating.</p>
-<h3 id=writing-tests>Writing Tests</h3>
-<p>Good unit tests follow a few general principles:</p>
-<ul>
-<li>Pass / Fail tests ensure intended succeeds and fails as designed.</li>
-<li>Transactional tests ensure transactions commit or roll back as designed</li>
-<li>CRUD operations work as designed</li>
-<li>All data created for or during a test is localized to the test to allow for parallel test execution</li>
-<li>All data created during or for a test gets cleaned up after tests completed</li>
-</ul>
-<p>For more complex applications, unit tests also ensure:</p>
-<ul>
-<li>that multi-threading works as intended,</li>
-<li>the unit deals appropriately with transient outages of external dependencies (retry, fail-fast, …)</li>
-<li>Stateful applications restore state when re-started</li>
-</ul>
 <h2 id=specific-guidance>Specific Guidance</h2>
 <p>Languages and Platforms provide their own unit test tools and frameworks:</p>
 <ul>
