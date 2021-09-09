@@ -4,13 +4,13 @@ linkTitle: "Tenants"
 weight: 1
 hide_summary: true
 description: >
-  Learn more about the core tenants that direct GPS Code With team's engagement model both externally and internally.
+  Learn more about the core tenants that direct GPS Code-with team's engagement model both externally and internally.
 ---
 
 # Core Tenants / Principals
 
 ## Context
-This document describes the core tenants of the GPS Code With team. These tenants help direct the team's enagement model with GPS partners with whom we are co-engineering, as well as between other team members. They should be referenced regularly to guide technical decisions as well as day-to-day operations.
+This document describes the core tenants of the GPS Code-with team. These tenants help direct the team's enagement model with GPS partners with whom we are co-engineering, as well as between other team members. They should be referenced regularly to guide technical decisions as well as day-to-day operations.
 
 ## Agile Manifesto Principals
 1. Our highest priority is to satisfy the customer through early and continuous delivery of valuable software.
