@@ -12,15 +12,15 @@ Integration testing is a software testing methodology used to determine how well
 
 Because one component of a system may be developed independently or in isolation of another it is important to verify the interaction of some or all components. A complex system may be composed of databases, APIs, interfaces, and more, that all interact with each other or additional external systems. Integration tests expose system-level issues such as broken database schemas or faulty third-party API integration. It ensures higher test coverage and serves as an important feedback loop throughout development.
 
-## Integration Testing Design Blocks
+<!-- ## Integration Testing Design Blocks
 
 Consider a banking application with three modules: login, transfers, and current balance, all developed independently. An integration test may verify when a user logs in they are re-directed to their current balance with the correct amount for the specific mock user. Another integration test may perform a transfer of a specified amount of money. The test may confirm there are sufficient funds in the account to perform the transfer, and after the transfer the current balance is updated appropriately for the mock user. The login page may be mocked with a test user and mock credentials if this module is not completed when testing the transfers module.
 
 Integration testing is done by the developer or QA tester. In the past, integration testing always happened after unit and before system and E2E testing. Compared to unit-tests, integration tests are fewer in quantity, usually run slower, and are more expensive to set up and develop. Now, if a team is following agile principles, integration tests can be performed before or after unit tests, early and often, as there is no need to wait for sequential processes. Additionally, integration tests can utilize mock data in order to simulate a complete system. There is an abundance of language-specific testing frameworks that can be used throughout the entire development lifecycle.
 
-\*\* It is important to note the difference between integration and acceptance testing. Integration testing confirms a group of components work together as intended from a technical perspective, while acceptance testing confirms a group of components work together as intended from a business scenario.
+\*\* It is important to note the difference between integration and acceptance testing. Integration testing confirms a group of components work together as intended from a technical perspective, while acceptance testing confirms a group of components work together as intended from a business scenario. -->
 
-## Applying Integration Testing
+<!-- ## Applying Integration Testing
 
 Prior to writing integration tests, the engineers must identify the different components of the system, and their intended behaviors and inputs and outputs. The architecture of the project must be fully documented or specified somewhere that can be readily referenced (e.g., the architecture diagram).
 
@@ -48,7 +48,7 @@ Bottom up testing is when lower level modules are tested together. In the scenar
 
 ![Bottom Up Integration Testing](/img/bottomUp.jpeg)
 
-A third approach known as the sandwich or hybrid model combines the bottom up and town down approaches to test lower and higher level components at the same time.
+A third approach known as the sandwich or hybrid model combines the bottom up and town down approaches to test lower and higher level components at the same time. -->
 
 <!-- ### Things to Avoid
 

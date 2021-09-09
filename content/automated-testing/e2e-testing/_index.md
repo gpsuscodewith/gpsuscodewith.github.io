@@ -25,7 +25,7 @@ The above illustration is a testing pyramid from [Kent C. Dodd’s blog](https:/
 
 The majority of your tests are at the bottom of the pyramid. As you move up the pyramid, the number of tests gets smaller. Also, going up the pyramid, tests get slower and more expensive to write, run, and maintain. Each type of testing vary for its purpose, application and the areas it suppose to cover. 
 
-## E2E Testing Design Blocks 
+<!-- ## E2E Testing Design Blocks 
 
 ![E2E Testing Design Framework](/img/e2e-blocks.png)
 
@@ -96,7 +96,7 @@ The tracing the quality metrics gives insight about the current status of testin
 - **Test case preparation status**: Number of test cases ready versus the total number of test cases.
 - **Frequent Test progress**: Number of test cases executed in the consistent frequent manner, e.g. weekly, versus a target number of the test cases in the same time period.
 - **Defects Status**: This metric represents the status of the defects found during testing. Defects should be logged into defect tracking tool (e.g. AzDO backlog) and resolved as per their severity and priority. Therefore, the percentage of open and closed defects as per their severity and priority should be calculated to track this metric. The AzDO Dashboard Query can be used to track this metric.
-- **Test environment availability**: This metric tracks the duration of the test environment used for end to end testing versus its scheduled allocation duration.
+- **Test environment availability**: This metric tracks the duration of the test environment used for end to end testing versus its scheduled allocation duration. -->
 
 ## E2E Testing Frameworks and Tools
 

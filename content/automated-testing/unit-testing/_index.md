@@ -35,7 +35,7 @@ In order to keep execution of unit tests fast and executable as part of a CI/CD 
 
 For integration or end-to-end testing, mocks should be replaced with API calls to the system they are simulating.
 
-### Writing Tests
+<!-- ### Writing Tests
 
 Good unit tests follow a few general principles:
 
@@ -49,7 +49,7 @@ For more complex applications, unit tests also ensure:
 
 - that multi-threading works as intended,
 - the unit deals appropriately with transient outages of external dependencies (retry, fail-fast, …)
-- Stateful applications restore state when re-started
+- Stateful applications restore state when re-started -->
 
 ## Specific Guidance
 
