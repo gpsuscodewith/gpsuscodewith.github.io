@@ -69,7 +69,7 @@ Many tools and frameworks can be used to write both unit and integration tests. 
 
 ## Conclusion
 
-Integration testing demonstrates how one module of a system, or external system, interfaces with another. This can be a test of two components, a sub-system, a whole system, or a collection of systems. Tests should be written frequently and throughout the entire development lifecycle using an appropriate amount of mocked dependencies and test data. Because integration tests prove that independently developed modules interface as technically designed, it increases confidence in the development cycle providing a path for a system that deploys and scales.
+Integration testing demonstrates how one module of a system, or external system, interfaces with another. This can be a test of two components, a sub-system, a whole system, or a collection of systems. Tests are written frequently and throughout the entire development lifecycle using an appropriate amount of mocked dependencies and test data. Because integration tests prove that independently developed modules interface as technically designed, it increases confidence in the development cycle providing a path for a system that deploys and scales.
 
 ## Resources
 
