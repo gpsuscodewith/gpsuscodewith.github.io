@@ -7,20 +7,13 @@ description: >
   How do we define "Done"?
 ---
 
-## Content TODO's
+The intent of the Definition of Done is to ensure proper planning has taken place to assure a new product or feature is developed  “On-schedule, On-budget, and with an acceptable level of Quality”
 
-- Solidify recommended checklist as opposed to providing example (see [cobalt](https://github.com/microsoft/cobalt/wiki/Definition-of-Done) definition of done)
+Definition of Done​
+Is the culmination of completed Work-items and Sprints​
 
-Software Engineering is not just implementing functionality and writing code, but also other associated tasks and activities to ensure all requirements are fulfilled when you finished your work. This is closely relevant to `done-done` term, which stands for a simple list of activities like writing code/unit tests/release notes/design docs and so on that adds verifiable/demonstrable value to the product.
+## Definition of Done criteria ​
+Each project Work-item that is defined in each project Sprint of the project will meet the pre-defined “Definition of Done Criteria” identified in the planning stage of a code-with engagement​
 
-Below is an example Done-Done checklist you should follow to ensure everything is done (may vary depending on project/client):
-
-- Is covered by unit and integration tests YES/NO
-- Is continuously tested in each environment YES/NO
-- Does the code coverage meet the minimum threshold YES/NO
-- Is sufficient diagnostic/user telemetry and dashboarding YES/NO
-- Is sufficient public documentation YES/NO
-- Feature owner sign off YES/NO
-- [if applicable] Customer value demo screencast is recorded and sent to the team
-YES/NO
-- [if applicable] Is Relevant architectural review is done YES/NO
+## Definition of Done criteria​
+Will be documented in the “User Story Acceptance Criteria“
