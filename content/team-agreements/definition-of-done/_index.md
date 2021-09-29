@@ -4,11 +4,8 @@ linkTitle: "Definition of Done"
 weight: 2
 hide_summary: true
 description: >
-  How do we define "Done"?
+  The intent of the Definition of Done is to ensure proper planning has taken place to assure a new product or feature is developed  “On-schedule, On-budget, and with an acceptable level of Quality”
 ---
-
-The intent of the Definition of Done is to ensure proper planning has taken place to assure a new product or feature is developed  “On-schedule, On-budget, and with an acceptable level of Quality”
-
 ## Definition of Done​
 Is the culmination of completed Work-items and Sprints​
 
