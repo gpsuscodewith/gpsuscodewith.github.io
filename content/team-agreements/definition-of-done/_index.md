@@ -1,8 +1,9 @@
 ---
 title: "Definition of Done"
 linkTitle: "Definition of Done"
+type: "docs"
 weight: 2
-hide_summary: true
+# hide_summary: true
 description: >
   The intent of the Definition of Done is to ensure proper planning has taken place to assure a new product or feature is developed  “On-schedule, On-budget, and with an acceptable level of Quality”
 ---
