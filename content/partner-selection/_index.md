@@ -11,7 +11,7 @@ description: >
 
 The GPS Code-with team will align with the parnter on goals and expectations. Initial discussions will be had that educate the partner on the Code-with team and how it engages. A technical strategist will see to understand and qualify things like:
 
-- Business drivers
+- Business drivers and impacts
 - High level timelines
 - Development resources dedicated to the project
 - The targeted technologies
@@ -20,14 +20,14 @@ The GPS Code-with team will align with the parnter on goals and expectations. In
 ## Preparation
 Once these things have been understood, a representative from the Code-with team will engage and begin the process of preparation.
 
-The planning phase in intended to gain a detailed technical understanding of the technical architecture, development practices, and environment, so that both the Code-with team and partner can make a descision on whether or not to move forward with scheduling the planning proces. This includes
+The planning phase in intended to gain a detailed technical understanding of the technical architecture, development practices, and environment, so that both the Ccde-with team and partner can make a descision on whether or not to move forward with scheduling the planning proces. This includes
 
-- User story analysis and backlog review
+- User story analysis, architectural and backlog review
 - Scoping technial requirements 
 - Execution of legal agreements with Microsoft
-
+<!-- 
 ### Exit criteria
-By the end of this process, a go/no-go decision is made to code with for the project, and initial scheduling is discussed. Scheduling accounts for both the Code-with and partner availability and pre-requisite work that may have been identified.  
+By the end of this process, a go/no-go decision is made to code with for the project, and initial scheduling is discussed. Scheduling accounts for both the Code-with and partner availability and pre-requisite work that may have been identified.   -->
 
 ## Planning
 During planning, we will review the business drivers and team readiness to execute. By the end, the Code-with team should have an in depth understanding of:

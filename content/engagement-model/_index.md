@@ -17,13 +17,16 @@ Partners should have the following in place to be considered for a code-with eng
 * Will have running software in production, on Azure, at the end of the engagement
 * Software will be written in one of the GPS code-with supported tech stacks
 
-# Partner Selection Process
+![Engagement Model](/img/engagement-model.png)
+
+## Partner Selection Process
 [Partner Selection Process](../partner-selection)
 
 ## Engagement
 All GPS code-with projects will be run with an agile process such as Kanban or scrum.  Flexibility with partner processes will be encouraged as the partner will be responsible to owning and maintaining the solution going forward, but an agile process is required to increase the chances for success. Rapid value to the customer and immediate feedback will ensure effort is not wasted on the wrong things. 
 
-During the execution of the engagement, the defined [roles](../roles) will be utilized throughout over the previously definied number of sprints.
+During the execution of the engagement, the defined [roles](../roles) will be utilized throughout over the previously definied number of sprints. The GPSUS code-with team will co-manage development, QA, UAT, and stakeholder demos with partner. Utiliing feature/function vertical slicing, the code-with team will co-produce and integrate technical artifacts as well.
+
 
 ## Handoff
 At the end of the GPS code-with engagement, the partner will take ownership of the solution.  All support for the solution will take place through standard partner support channels, such as Premiere, that are set up for 24/7 support with assigned shifts to ensure timely response to support incidents.

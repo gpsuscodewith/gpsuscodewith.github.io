@@ -4,19 +4,19 @@ linkTitle: "Preparation & Planning"
 weight: 2
 hide_summary: true
 description: >
-  Learn more about what happens during the envisoning stage.
+  Learn more about what happens before the code-with team engages.
 ---
 
 # Overview
 
 The Code-with Preparation & Planning has the following structure:
 
-* Technical Deep Dives
+* Technical Deep Dives (Back)
 * Backlog Review
 * Architecture Review 
 * Next Steps / Planning
 
-## 1. Architecture Review
+## Architecture Review
 
 The architecture review is partner-lead and covers the current architecture or proposed architecture (if one has already been chosen). The context is the 
 
@@ -68,10 +68,10 @@ The planning sessions create the engagement details and schedule the first week 
 
 The key outputs include is:
 
-* Identify prerequisites for code-with engagement
+* Identify and timebox prerequisites for code-with engagement
 * Schedule sprint 0
 
-## Approaches to Delivery 
+<!-- ## Approaches to Delivery 
 
 ### Virtual 4-Session Agenda
 
@@ -79,4 +79,4 @@ A virtual series of four sessions is used to cover the Preparation & Planning an
 
 ### In Person / All Day
 
-The code-with team would arrange an onsite or agreed upon location to deliver the full Preparation & Planning with the partner.
+The code-with team would arrange an onsite or agreed upon location to deliver the full Preparation & Planning with the partner. -->
